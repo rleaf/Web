@@ -1,0 +1,49 @@
+body {
+    font: 14px/20px Georgia, "Times New Roman", Times, serif;
+    color: #fff;
+    background: #918574 url(../img/bg-quilt.png);
+    min-width: 980px;
+}
+
+#nav {
+    background: url(../img/bg-nav.png)left bottom;
+    padding: 28px 0;
+    overflow: hidden;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#nav ul li {
+    float: left;
+}
+
+#nav ul a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#mainContent {
+    border-bottom: 1px solid #3e2216;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 95px 0 40px;
+}
+
+#secondaryContent {
+    border-top: 1px solid #bbb;
+    padding: 25px 0 45px;
+}
+
+.secondaryContent {
+    border-top: 1px solid #bbb;
+    padding: 25px 0 45px;
+}
+
+.contentWrapper {
+    width: 980px;
+    margin: 0 auto;
+}
