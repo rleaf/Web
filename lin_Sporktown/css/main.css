@@ -1,0 +1,167 @@
+html {
+      min-width: 980px;
+}
+
+body {
+    font: 14px/20px Georgia, "Times New Roman", Times, serif;
+    color: #fff;
+    background: #918574 url(../img/bg-quilt.png)center top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Copy Paste Code */
+h1 {
+	font-size: 22px;
+	color: #F9D448;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+h2 {
+	font-size: 20px;
+	color: #F9D448;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+h3 {
+	font-size: 17px;
+	color: #F9D448;
+	margin-top: 13px;
+	margin-bottom: 10px;
+}
+p {
+	margin: 0 0 7px;
+}
+
+/* Copy Paste Code END */
+
+#nav {
+    background: url(../img/bg-nav.png) center bottom;
+    padding: 28px 0;
+    overflow: hidden;
+}
+
+#nav img {
+      position: absolute;
+      top: 0;
+      padding-left: 15px;
+}
+
+#nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 0 195px;
+}
+
+#nav ul li {
+    float: left;
+}
+
+#nav ul a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 8px;
+    display: block;
+}
+
+#nav ul a:hover {
+    background: #29180f;
+    outline: 1px solid #d8caa8;
+}
+
+#mainContent {
+    border-bottom: 1px solid #3e2216;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 95px 0 40px;
+    overflow: hidden;
+    margin-top: -20px;
+}
+
+#columnMain {
+      width: 40%;
+      float: left;
+      text-align: center;
+      margin-left: 30%;
+}
+
+#mainContent #columnMain h1 {
+      font: 30px/20px Baskervile, "Palatino Linotype", "book Antiqua";
+      font-style: italic;
+      font-weight: normal;
+}
+
+#mainContent #columnSide1 {
+      width: 25%;
+      float: left;
+      margin-left: -70%;
+      padding-left: 15px;
+}
+
+#mainContent #columnSide2 {
+      width: 25%;
+      float: right;
+      padding-left: 15px;
+}
+
+#secondaryContent {
+    border-top: 1px solid #bbb;
+    padding: 25px 0 45px;
+    overflow: hidden;
+}
+
+#secondaryContent .feature {
+      width: 25%;
+      float: left;
+}
+
+#secondaryContent .feature a {
+      color: #fff;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+}
+
+#secondaryContent .feature a:hover {
+      background: #6d6356;
+}
+
+.secondaryContent {
+    border-top: 1px solid #bbb;
+    padding: 25px 0 45px;
+}
+
+.contentWrapper {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.ampersand {
+    font-family: Baskervile, "Palatino Linotype", "Book Antiqua";
+    font-style: italic;
+}
+
+@media only screen and (max-width: 1024px) {
+      #mainContent, #columnMain {
+            width: none;
+            background: gray;
+            float: none;
+      }
+
+      .contentWrapper {
+            width: auto;
+      }
+
+      #columnMain {
+            float: none;
+            width: auto;
+      }
+
+      body {
+            background: white;
+      }
+
+}
