@@ -119,6 +119,10 @@ body {
             background: darkblue;
       }
 
+      .headerimg {
+            width: 100%;
+      }
+
       .main .main-right {
             clear: both;
             width: 100%;
