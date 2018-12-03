@@ -121,6 +121,11 @@ body {
 
       .main .main-right {
             clear: both;
+            width: 100%;
+      }
+      .main .main-left {
+            clear:both;
+            width: 100%;
       }
 
       .footer {
