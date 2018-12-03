@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Full Depth Performance</title>
+            <link href="css/styles.css" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Muli:900" rel="stylesheet" type="text/css">
+            <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet" type="text/css"  />
+            <link href="//db.onlinewebfonts.com/c/ec86828a050ef361a30669e299e63d49?family=StencilW01-Bold" rel="stylesheet" type="text/css"/>
+            <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil" rel="stylesheet">
+      </head>
+
+      <body>
+            <div class="nav">
+                  <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Faculty Info</a></li>
+                        <li><a href="#">Our Members</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                  </ul>
+            </div>
+
+            <div class="headerimg">
+                  <img src="img/logo4.png" alt="Logo" width="45%">
+            </div>
+
+            <div class="main">
+                  <div class="main-left">
+                        <div class="slideshow-container">
+                              <div class="gymSlides fade">
+                                    <img src="img/slideshow/slideshow1.png" alt="Picture 1" height="420">
+                              </div>
+                              <div class="gymSlides fade">
+                                    <img src="img/slideshow/slideshow2.png" alt="Picture 1" width="90%">
+                              </div>
+                              <div class="gymSlides fade">
+                                    <img src="img/slideshow/slideshow3.png" alt="Picture 1">
+                              </div>
+                              <br>
+
+                        </div>
+                              <div style="text-align:center">
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                                      <span class="dot"></span>
+                        </div>
+                  </div>
+
+                  <script>
+                        var slideIndex = 0;
+                        showSlides();
+
+                        function showSlides() {
+                                  var i;
+                                  var slides = document.getElementsByClassName("gymSlides");
+                                  var dots = document.getElementsByClassName("dot");
+                                  for (i = 0; i < slides.length; i++) {
+                                     slides[i].style.display = "none";
+                                  }
+                                  slideIndex++;
+                                  if (slideIndex > slides.length) {slideIndex = 1}
+                                  for (i = 0; i < dots.length; i++) {
+                                      dots[i].className = dots[i].className.replace(" active", "");
+                                  }
+                                  slides[slideIndex-1].style.display = "block";
+                                  dots[slideIndex-1].className += " active";
+                                  setTimeout(showSlides, 3000);
+                        }
+                  </script>
+
+                  <div class="main-right">
+                        <span style="text-transform: uppercase; font-weight: bold;">Gym Hours</span> <br><br>
+                        Mon - Fri: 6 - 10 PM <br>
+                        Sat & Sun: 7 - 5 PM <br>
+                        <div class="main-right-small">
+                              <br>
+                              2749, 322 4th St, Ewing Township, NJ 08638 <br>
+                              (609) 362-2165
+                        </div>
+                        <div class="main-right-images">
+                              <a href="https://www.facebook.com/fulldepth/" target="_blank"><img src="img/multimedia/facebook1.png" alt="Facebook" height="64px" width="64px"></a>
+                              <a href="https://www.instagram.com/explore/locations/1545546805510027/full-depth-performance-for-life/" target="_blank"><img src="img/multimedia/instagram1.png" alt="Instagram" height="64px" width="64px"></a>
+                              <a href="#"><img src="img/multimedia/snapchat1.png" alt="Snapchat" height="64px" width="64px"></a>
+                        </div>
+                  </div>
+            </div>
+            <div class="footer">
+
+
+            </div>
+
+      </body>
+</html>
