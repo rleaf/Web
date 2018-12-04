@@ -1,0 +1,102 @@
+body, html {
+      background: #000919;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+}
+
+.nav {
+      display: block;
+      padding-right: 80px;
+}
+
+.nav a, li {
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Libre Franklin', sans-serif;
+      text-decoration: none;
+      list-style-type: none;
+      float: right;
+      margin: 5px 15px;
+}
+
+.brand img {
+      clear: right;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 35%;
+      animation: fadein 7.5s;
+      -moz-animation: fadein 7.5s; /* Firefox */
+      -webkit-animation: fadein 7.5s; /* Safari and Chrome */
+      -o-animation: fadein 7.5s; /* Opera */
+}
+
+.left_main {
+      float: left;
+      clear: none;
+      width: 50%;
+      height: 100%;
+      text-align: center;
+}
+
+.right_main {
+      float: right;
+      clear: none;
+      width: 50%;
+      height: 100%;
+      text-align: center;
+}
+
+.left_main a, .right_main a {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff;
+      outline: none;
+      border: none;
+      background: transparent;
+      height: 100%;
+      text-decoration: none;
+}
+
+.left_main:hover, .right_main:hover {
+      background: #001333;
+      animation: fadein 2s;
+      -moz-animation: fadein 2s; /* Firefox */
+      -webkit-animation: fadein 2s; /* Safari and Chrome */
+      -o-animation: fadein 2s; /* Opera */
+}
+
+      @keyframes fadein {
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-moz-keyframes fadein { /* Firefox */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-webkit-keyframes fadein { /* Safari and Chrome */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-o-keyframes fadein { /* Opera */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
