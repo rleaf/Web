@@ -5,3 +5,11 @@ Maintaining post-animation visuals --
 Fadein CSS / jquery --
 
       https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load
+
+Margins --
+
+      https://www.w3schools.com/css/css_margin.asp
+
+CSS BUttons --
+
+      https://codepen.io/rleaf/pen/MzdJNV

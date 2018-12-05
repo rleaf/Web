@@ -3,11 +3,14 @@ body, html {
       width: 100%;
       height: 100%;
       overflow: hidden;
+      margin: 0;
 }
 
 .nav {
       display: block;
       padding-right: 80px;
+      z-index: 100;
+      position: relative;
 }
 
 .nav a, li {
@@ -18,6 +21,7 @@ body, html {
       list-style-type: none;
       float: right;
       margin: 5px 15px;
+      z-index: 100;
 }
 
 .brand img {
@@ -25,7 +29,25 @@ body, html {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 35%;
+      width: 30%;
+      position: relative;
+      z-index: 100;
+
+      animation: logofade 7.5s;
+      -moz-animation: logofade 7.5s; /* Firefox */
+      -webkit-animation: logofade 7.5s; /* Safari and Chrome */
+      -o-animation: logofade 7.5s; /* Opera */
+}
+
+.brand p {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 42px;
+      color: #fff;
+      display: block;
+      margin-top: -30px;
+      text-align: center;
+      position: relative;
+      z-index: 100;
       animation: logofade 7.5s;
       -moz-animation: logofade 7.5s; /* Firefox */
       -webkit-animation: logofade 7.5s; /* Safari and Chrome */
@@ -34,32 +56,44 @@ body, html {
 
 .left_main {
       float: left;
-      clear: none;
       width: 50%;
-      height: 100%;
+      height: 110%;
       text-align: center;
       opacity: 0.3;
+      margin-top: -30%;
+      z-index: -999;
 }
 
 .right_main {
       float: right;
-      clear: none;
       width: 50%;
-      height: 100%;
+      height: 110%;
       text-align: center;
       opacity: 0.3;
+      margin-top: -30%;
 }
 
 .left_main a, .right_main a {
       font-family: 'Libre Franklin', sans-serif;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 700;
+      display: block;
       color: #fff;
-      outline: none;
-      border: none;
       height: 100%;
       text-decoration: none;
+      margin: 65% 0 0 0;
 }
+
+/* Testing display: block;
+
+      .left_main p {
+      margin: 50% 0 0 0;
+      vertical-align: middle;
+      display: block;
+      height: 100%;
+}
+
+ */
 
 .left_main:hover, .right_main:hover {
       background: #001333;
@@ -68,6 +102,16 @@ body, html {
       -moz-animation: fadein 2s; /* Firefox */
       -webkit-animation: fadein 2s forwards; /* Safari and Chrome */
       -o-animation: fadein 2s; /* Opera */
+}
+
+.sf-snow-flake {
+position: fixed;
+top: -20px;
+z-index: 99999;
+}
+
+.sf-snow-anim {
+top: 110%;
 }
 
       @keyframes fadein {
@@ -137,13 +181,3 @@ body, html {
               opacity: 1;
           }
       }
-
-.sf-snow-flake {
-position: fixed;
-top: -20px;
-z-index: 99999;
-}
-
-.sf-snow-anim {
-top: 110%;
-}
