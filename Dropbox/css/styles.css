@@ -38,6 +38,7 @@ body, html {
       width: 50%;
       height: 100%;
       text-align: center;
+      opacity: 0.3;
 }
 
 .right_main {
@@ -46,6 +47,7 @@ body, html {
       width: 50%;
       height: 100%;
       text-align: center;
+      opacity: 0.3;
 }
 
 .left_main a, .right_main a {
@@ -55,7 +57,6 @@ body, html {
       color: #fff;
       outline: none;
       border: none;
-      background: transparent;
       height: 100%;
       text-decoration: none;
 }
@@ -63,14 +64,15 @@ body, html {
 .left_main:hover, .right_main:hover {
       background: #001333;
       animation: fadein 2s;
+      animation: fadein 2s forwards;
       -moz-animation: fadein 2s; /* Firefox */
-      -webkit-animation: fadein 2s; /* Safari and Chrome */
+      -webkit-animation: fadein 2s forwards; /* Safari and Chrome */
       -o-animation: fadein 2s; /* Opera */
 }
 
       @keyframes fadein {
           from {
-              opacity:0;
+              opacity:0.3;
           }
           to {
               opacity:1;
@@ -78,7 +80,7 @@ body, html {
       }
       @-moz-keyframes fadein { /* Firefox */
           from {
-              opacity:0;
+              opacity:0.3;
           }
           to {
               opacity:1;
@@ -86,7 +88,7 @@ body, html {
       }
       @-webkit-keyframes fadein { /* Safari and Chrome */
           from {
-              opacity:0;
+              opacity:0.3;
           }
           to {
               opacity:1;
@@ -94,7 +96,7 @@ body, html {
       }
       @-o-keyframes fadein { /* Opera */
           from {
-              opacity:0;
+              opacity:0.3;
           }
           to {
               opacity: 1;

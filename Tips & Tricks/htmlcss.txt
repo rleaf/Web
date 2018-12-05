@@ -1,0 +1,3 @@
+Maintaining post-animation visuals --
+
+      https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css3-animation
