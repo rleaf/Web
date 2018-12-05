@@ -90,7 +90,7 @@ body, html {
 .left_main a, .right_main a {
       font-family: 'Libre Franklin', sans-serif;
       font-size: 22px;
-      display:inline-block;
+      display:block;
       color: #fff;
       text-decoration: none;
       padding: 105% 0 100% 0;
