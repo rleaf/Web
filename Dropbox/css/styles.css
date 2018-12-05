@@ -73,6 +73,10 @@ body, html {
       margin-top: -30%;
 }
 
+.right_main img {
+      float: right;
+}
+
 .left_main a, .right_main a {
       font-family: 'Libre Franklin', sans-serif;
       font-size: 22px;
