@@ -13,3 +13,7 @@ Margins --
 CSS BUttons --
 
       https://codepen.io/rleaf/pen/MzdJNV
+
+Floating Logo --
+
+      https://codepen.io/magnificode/pen/CsIqK
