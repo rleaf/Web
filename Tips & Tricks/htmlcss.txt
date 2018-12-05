@@ -1,3 +1,7 @@
 Maintaining post-animation visuals --
 
       https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css3-animation
+
+Fadein CSS / jquery --
+
+      https://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load

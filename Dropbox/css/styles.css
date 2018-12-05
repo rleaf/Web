@@ -26,10 +26,10 @@ body, html {
       margin-left: auto;
       margin-right: auto;
       width: 35%;
-      animation: fadein 7.5s;
-      -moz-animation: fadein 7.5s; /* Firefox */
-      -webkit-animation: fadein 7.5s; /* Safari and Chrome */
-      -o-animation: fadein 7.5s; /* Opera */
+      animation: logofade 7.5s;
+      -moz-animation: logofade 7.5s; /* Firefox */
+      -webkit-animation: logofade 7.5s; /* Safari and Chrome */
+      -o-animation: logofade 7.5s; /* Opera */
 }
 
 .left_main {
@@ -63,7 +63,7 @@ body, html {
 
 .left_main:hover, .right_main:hover {
       background: #001333;
-      animation: fadein 2s;
+      animation: fadein2 2s;
       animation: fadein 2s forwards;
       -moz-animation: fadein 2s; /* Firefox */
       -webkit-animation: fadein 2s forwards; /* Safari and Chrome */
@@ -97,6 +97,41 @@ body, html {
       @-o-keyframes fadein { /* Opera */
           from {
               opacity:0.3;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
+/*********************************/
+
+      @keyframes logofade {
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-moz-keyframes logofade { /* Firefox */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-webkit-keyframes logofade { /* Safari and Chrome */
+          from {
+              opacity:0;
+          }
+          to {
+              opacity:1;
+          }
+      }
+      @-o-keyframes logofade { /* Opera */
+          from {
+              opacity:0;
           }
           to {
               opacity: 1;
