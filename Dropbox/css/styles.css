@@ -138,6 +138,22 @@ z-index: 99999;
 top: 110%;
 }
 
+/** compare plans page **/
+
+.options {
+  clear: both;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.standard p, .advanced p, .enterprise p {
+  color: #fff;
+  font-size: 22px;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/** end **/
+
 @keyframes fadein {
   from {
     opacity: 0.3;
