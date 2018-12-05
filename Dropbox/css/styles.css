@@ -106,11 +106,11 @@ body, html {
 
 .left_main:hover, .right_main:hover {
       background: #001333;
-      animation: fadein2 4s;
-      animation: fadein 4s forwards;
-      -moz-animation: fadein 4s; /* Firefox */
-      -webkit-animation: fadein 4s forwards; /* Safari and Chrome */
-      -o-animation: fadein 4s; /* Opera */
+      animation: fadein 3.5s;
+      animation: fadein 3.5s forwards;
+      -moz-animation: fadein 3.5s; /* Firefox */
+      -webkit-animation: fadein 3.5s forwards; /* Safari and Chrome */
+      -o-animation: fadein 3.5s; /* Opera */
 }
 
 .sf-snow-flake {
