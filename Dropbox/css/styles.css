@@ -78,16 +78,18 @@ body, html {
 
 
 .right_main img {
+      clear: left;
       position: relative;
       margin-left: auto;
       margin-right: auto;
-      width: 20%;
+      width: 25%;
+      margin: 30px 0 0 0;
 }
 
 .left_main a, .right_main a {
       font-family: 'Libre Franklin', sans-serif;
       font-size: 22px;
-      display:block;
+      display:inline-block;
       color: #fff;
       text-decoration: none;
       padding: 105% 0 100% 0;
