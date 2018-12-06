@@ -123,6 +123,8 @@ body, html {
 	width: 100%;
       height: 15%;
 	z-index: 99999;
+      image-rendering: auto;
+      image-rendering: crisp-edges;
 }
 
 .sf-snow-flake {
