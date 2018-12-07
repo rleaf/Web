@@ -23,7 +23,7 @@ body, html {
 }
 */
 
-.nav ul a, li {
+.nav ul a, .nav ul li {
       color: #fff;
       font-size: 14px;
       font-family: 'Libre Franklin', sans-serif;
@@ -33,6 +33,16 @@ body, html {
       float: right;
       margin: 5px 15px;
       z-index: 100;
+}
+
+
+#home img {
+      float: left;
+      position: absolute;
+      margin-top: 5px;
+      left: 46%;
+      padding: 0;
+      width: 160px;
 }
 
 .nav ul li a:hover {
@@ -162,19 +172,28 @@ top: 110%;
 
 /** compare plans page **/
 
+
+
 .options {
       width: auto;
-      margin: 13% auto;
+      margin: 8% auto;
+      display: -webkit-flex;
+      display: -ms-flexbox;
       display: flex;
       clear: both;
       justify-content: center;
-      align-items: center;
 }
 
 .options .standard, .options .advanced, .options .enterprise {
-      display: inline-block;
-      width: 15%;
-      margin: auto 2.5%;
+      margin: 0 2.5%;
+      flex: 0 0 15%;
+}
+
+.compareplans_box {
+      border: 1px solid #0060FF;
+      border-radius: 20px;
+      padding: 0 0 5px 0;
+
 }
 
 .standard h1, .advanced h1, .enterprise h1 {
@@ -192,16 +211,31 @@ top: 110%;
       font-family: 'Libre Franklin', sans-serif;
       font-weight: 100;
       text-align: center;
-      margin: 0;
+      margin: 5px 0 0 0;
 }
 
-.standard p, .advanced p, .enterprise p {
+.compareplans_box p {
       color: #fff;
       font-size: 14px;
       font-family: 'Libre Franklin', sans-serif;
       font-weight: 100;
       text-align: center;
-      line-height: 150%;
+      line-height: 130%;
+}
+
+.perks ul li {
+      color: #fff;
+      font-size: 14px;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: lighter;
+      text-align: left;
+      list-style-type: none;
+      margin: 5% 0 5% 10%;
+}
+
+.perks ul li:before {
+      content: '\2713\0020';
+      margin-left: -5%;
 }
 
 .options a {
@@ -220,14 +254,15 @@ top: 110%;
 }
 
 .options button {
+      display: block;
       margin: 0 auto;
   outline: none;
   height: 40px;
   text-align: center;
   width: 90%;
-  border-radius: 40px;
+  border-radius: 10px;
   background: transparent;
-  border: 2px solid #0060FF;
+  border: 1px solid #0060FF;
   color: #0060FF;
   letter-spacing: 1px;
   text-shadow: 0;
@@ -238,6 +273,7 @@ top: 110%;
 }
 button:hover {
   background: #001332 ;
+  color: #4C8FFF;
 }
 button:active {
   letter-spacing: 1px;
