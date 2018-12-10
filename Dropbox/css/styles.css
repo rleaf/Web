@@ -272,10 +272,10 @@ top: 110%;
 }
 
 .signinwrapper {
+      display: block;
       padding-top: 10%;
 }
 .signinwrapper .signintext p {
-      display: block;
       clear: both;
       font-family: 'Libre Franklin', sans-serif;
       font-size: 42px;
