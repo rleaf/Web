@@ -2,8 +2,11 @@ body, html {
       background: #000919;
       width: 100%;
       height: 100%;
-      overflow: hidden;
       margin: 0;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 .nav {
@@ -11,6 +14,7 @@ body, html {
       padding-right: 80px;
       z-index: 100;
       position: relative;
+
 }
 
 /*
@@ -185,7 +189,7 @@ top: 110%;
 }
 
 .options .standard, .options .advanced, .options .enterprise {
-      margin: 0 2.5%;
+      margin: 5% 2.5% 0 2.5%;
       flex: 0 0 15%;
 }
 
@@ -267,6 +271,19 @@ top: 110%;
             -o-animation: optionsahover 0.3s; /* Opera */
 }
 
+.signinwrapper {
+      padding-top: 10%;
+}
+.signinwrapper .signintext p {
+      display: block;
+      clear: both;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+}
+
 .options button {
       display: block;
       margin: 0 auto;
@@ -286,7 +303,7 @@ top: 110%;
   transition: all 0.25s ease;
 }
 button:hover {
-  background: #001332 ;
+  background: #0060FF ;
   color: #4C8FFF;
 }
 button:active {
@@ -321,12 +338,15 @@ button:active {
   content: "\f00c";
 }
 
+
+
 /*** Snowman **/
 
 .snowman {
       zoom: 0.5;
       -moz-transform: scale (0.5);
       position: absolute;
+      bottom: 17%;
       margin-left: 37%;
 
 }
