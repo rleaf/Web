@@ -9,13 +9,23 @@ body, html {
 	display: none;
 }
 
+/*
+.nav {
+      display: inline-block;
+      z-index: 100;
+      float: right;
+      position: relative;
+}
+*/
+
+
 .nav {
       display: block;
       padding-right: 80px;
       z-index: 100;
       position: relative;
-
 }
+
 
 /*
 .homefade {
@@ -34,10 +44,25 @@ body, html {
       font-weight: 600;
       text-decoration: none;
       list-style-type: none;
+            margin: 5px 15px;
       float: right;
-      margin: 5px 15px;
+
       z-index: 100;
 }
+
+/*
+#home {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+}
+
+#home img {
+      width: 160px;
+
+}
+*/
 
 
 #home img {
@@ -48,6 +73,7 @@ body, html {
       padding: 0;
       width: 160px;
 }
+
 
 .nav ul li a:hover {
       color: #0060FF;
@@ -271,17 +297,92 @@ top: 110%;
             -o-animation: optionsahover 0.3s; /* Opera */
 }
 
-.signinwrapper {
-      display: block;
-      padding-top: 10%;
+.signin_image {
+      float: left;
 }
+
+.signin_image img {
+      padding-top: 35%;
+      margin-left: 50%;
+}
+
+.signinwrapper {
+      float: right;
+      padding-top: 15%;
+}
+
 .signinwrapper .signintext p {
-      clear: both;
+
       font-family: 'Libre Franklin', sans-serif;
-      font-size: 42px;
+      font-size: 24px;
       font-weight: 600;
       color: #fff;
-      text-align: center;
+      text-align: left;
+}
+
+.signinwrapper .signintext a {
+      text-decoration: none;
+}
+
+.signinwrapper .signintext a:hover {
+      color: #4C8FFF;
+            animation: optionsahover 0.3s;
+            animation: optionsahover 0.3s;
+            -moz-animation: optionsahover 0.3s; /* Firefox */
+            -webkit-animation: optionsahover 0.3s; /* Safari and Chrome */
+            -o-animation: optionsahover 0.3s; /* Opera */
+}
+
+.signinwrapper .signintext .textinput p {
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      color: #fff;
+      text-align: left;
+}
+
+
+
+input[type=text] {
+      background: #fff;
+      line-height: 1.9;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #0060FF;
+      font-size: 16px;
+      font-family: 'Libre Franklin', sans-serif;
+      border-radius: 5px;
+      padding: 2px 30px;
+
+}
+
+input[type=submit] {
+      background: transparent;
+      border: 1px solid #0060FF;
+      border-radius: 5px;
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 16px;
+      color: #0060FF;
+      margin-top: 10px;
+      padding: 10px 30px;
+}
+
+input[type=submit]:hover {
+  background: #0060FF ;
+  color: #4C8FFF;
+              animation: optionsahover 0.3s;
+              animation: optionsahover 0.3s;
+              -moz-animation: optionsahover 0.3s; /* Firefox */
+              -webkit-animation: optionsahover 0.3s; /* Safari and Chrome */
+              -o-animation: optionsahover 0.3s; /* Opera */
+}
+
+hr {
+
+    border:         none;
+    border-left:    1px solid hsla(200, 10%, 50%,100);
+    height:         100px;
+    width:          1px;
 }
 
 .options button {
