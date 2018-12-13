@@ -299,11 +299,13 @@ top: 110%;
 
 .signin_image {
       float: left;
+
 }
 
 .signin_image img {
-      padding-top: 35%;
-      margin-left: 50%;
+      padding-top: 20%;
+      padding-left: 50%;
+      width: 150%;
 }
 
 .signinwrapper {
