@@ -1,0 +1,42 @@
+<!-- Create an input table, then have JS pull information from the table and display it as an alert -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Prepare for test 2</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+                  function doSomething() {
+
+                        var name;
+                        var age;
+
+                        name = document.getElementById('name').value;
+                        age = document.getElementById('age').value;
+
+                        alert('Your name is ' + name + ' and you are ' + age + '.years old.');
+                  }
+            </script>
+      </head>
+      <body>
+            <div class="main-centered">
+                  <table id='fancy-table'>
+                        <tr>
+                              <td>Name: </td>
+                              <td><input type='text' id='name'></td>
+                        </tr>
+                        <tr>
+                              <td>Age:</td>
+                              <td><input type='text' id='age'></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="doSomething();" name="button">Submit</button>
+            </div>
+      </body>
+</html>
