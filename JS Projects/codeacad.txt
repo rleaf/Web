@@ -1,0 +1,172 @@
+Code Academy Review Overview
+
+Lesson 1 - Introduction To JS
+      Data is printed, or logged, to the console, a panel that displays messages, with console.log().
+      You can write single-line comments with // and multi-line comments between /* and */.
+      There are 7 fundamental data types in JavaScript: strings, numbers, booleans, null, undefined, symbol, and object.
+      Numbers are any number without quotes: 23.8879
+      Strings are characters wrapped in single or double quotes: 'Sample String'
+      The built-in arithmetic operators include +, -, *, /, and %.
+      Objects, including instances of data types, can have properties, stored information.
+            The properties are denoted with a . after the name of the object, for example: 'Hello'.length.
+      Objects, including instances of data types, can have methods which perform actions.
+            Methods are called by appending the object or instance with a period, the method name, and parentheses. For example: 'hello'.toUpperCase().
+      We can access properties and methods by using the ., dot operator.
+      Built-in objects, including Math, are collections of methods and properties that JavaScript provides.
+
+Lesson 2 - Conditional Statements
+      An if statement checks a condition and will execute a task if that condition evaluates to true.
+      if...else statements make binary decisions and execute different code blocks based on a provided condition.
+      We can add more conditions using else if statements.
+      Comparison operators, including <, >, <=, >=, ===, and !== can compare two values.
+      The logical and operator, &&, or “and”, checks if both provided expressions are truthy.
+      The logical operator ||, or “or”, checks if either provided expression is truthy.
+      The bang operator, !, switches the truthiness and falsiness of a value.
+      The ternary operator is shorthand to simplify concise if...else statements.
+      A switch statement can be used to simplify the process of writing multiple else if statements.
+            The break keyword stops the remaining cases from being checked and executed in a switch statement.
+
+Lesson 3 - Functions
+      A function is a reusable block of code that groups together a sequence of statements to perform a specific task.
+
+      A function declaration :
+
+            function greetWorld() {
+                  console.log('Hello, World');
+            } //function = Function Keyword, greetWorld = Identifier, {} = Function Body
+
+      A parameter is a named variable inside a function’s block which will be assigned the value of the argument passed in when the function is invoked:
+
+      JavaScript syntax for declaring a function with parameters
+      To call a function in your code:
+
+      Diagram showing the syntax of invoking a function
+      ES6 introduces new ways of handling arbitrary parameters through default parameters which allow us to assign a
+            default value to a parameter in case no argument is passed into the function.
+
+      To return a value from a function, we use a return statement.
+
+      To define a function using function expressions:
+
+      defining a function expression
+      To define a function using arrow function notation: alt
+      Function definition can be made concise using concise arrow notation:
+
+Lesson 4 - Scope
+      An important idea in programming is scope. Scope defines where variables can be accessed or referenced.
+      While some variables can be accessed from anywhere within a program, other variables may only be available
+      in a specific context.
+
+      You can think of scope like the view of the night sky from your window. Everyone who lives on the planet Earth
+      is in the global scope of the stars. The stars are accessible globally. Meanwhile, if you live in a city, you may see
+      the city skyline or the river. The skyline and river are only accessible locally in your city, but you can still see the
+      stars that are available globally.
+
+      Over the next few exercises, we’ll explore how scope relates to variables and learn best practices for variable
+      declaration.
+
+Lesson 5 - Arrays
+      Arrays are lists that store data in JavaScript.
+      Arrays are created with brackets [].
+      Each item inside of an array is at a numbered position, or index, starting at 0.
+      We can access one item in an array using its index, with syntax like: myArray[0].
+      We can also change an item in an array using its index, with syntax like myArray[0] = 'new string';
+      Arrays have a length property, which allows you to see how many items are in an array.
+      Arrays have their own methods, including .push() and .pop(), which add and remove items from an array, respectively.
+      Arrays have many methods that perform different tasks, such as .slice() and .shift(), you can find documentation at the Mozilla Developer Network website.
+      Some built-in methods are mutating, meaning the method will change the array, while others are not mutating. You can always check the documentation.
+      Variables that contain arrays can be declared with let or const. Even when declared with const, arrays are still mutable. However, a variable declared with const cannot be reassigned.
+      Arrays mutated inside of a function will keep that change even outside the function.
+      Arrays can be nested inside other arrays.
+      To access elements in nested arrays chain indices using bracket notation.
+
+Lesson 6 - Loops
+      Loops perform repetitive actions so we don’t have to code that process manually every time.
+      How to write for loops with an iterator variable that increments or decrements
+      How to use a for loop to iterate through an array
+      A nested for loop is a loop inside another loop
+      while loops allow for different types of stopping conditions
+      Stopping conditions are crucial for avoiding infinite loops.
+      do...while loops run code at least once— only checking the stopping condition after the first execution
+      The break keyword allows programs to leave a loop during the execution of its block
+
+Lesson 7 - Higher-Order Functions & Iterators
+      Abstraction allows us to write complicated code in a way that’s easy to reuse, debug, and understand for human readers
+
+      We can work with functions the same way we would any other type of data including reassigning them to new variables
+
+      JavaScript functions are first-class objects, so they have properties and methods like any object
+
+      Functions can be passed into other functions as parameters
+
+      A higher-order function is a function that either accepts functions as parameters, returns a function, or both
+
+      -- Iterators --
+
+      .forEach() is used to execute the same code on every element in an array but does not change the array and returns undefined.
+      .map() executes the same code on every element in an array and returns a new array with the updated elements.
+      .filter() checks every element in an array to see if it meets certain criteria and returns a new array with the elements
+            that return truthy for the criteria.
+      .findIndex() returns the index of the first element of an array which satisfies a condition in the callback function.
+            It returns -1 if none of the elements in the array satisfies the condition.
+      .reduce() iterates through an array and takes the values of the elements and returns a single value.
+      All iterator methods takes a callback function that can be pre-defined, or a function expression, or an arrow function.
+      You can visit the Mozilla Developer Network to learn more about iterator methods (and all other parts of JavaScript!).
+
+Lesson 8 - Objects & Advanced objects
+      Objects store collections of key-value pairs.
+      Each key-value pair is a property—when a property is a function it is known as a method.
+      An object literal is composed of comma-separated key-value pairs surrounded by curly braces.
+      You can access, add or edit a property within an object by using dot notation or bracket notation.
+      We can add methods to our object literals using key-value syntax with anonymous function expressions as
+            values or by using the new ES6 method syntax.
+      We can navigate complex, nested objects by chaining operators.
+      Objects are mutable—we can change their properties even when they’re declared with const.
+      Objects are passed by reference— when we make changes to an object passed into a function, those changes are permanent.
+      We can iterate through objects using the For...in syntax.
+
+      -- Advanced Objects --
+
+      The object that a method belongs to is called the calling object.
+      The this keyword refers the calling object and can be used to access properties of the calling object.
+      Methods do not automatically have access to other internal properties of the calling object.
+      The value of this depends on where the this is being accessed from.
+      We cannot use arrow functions as methods if we want to access other internal properties.
+      JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers
+            about the intent of the code.
+      The usage of an underscore before a property name means that the original developer did not intend for that
+            property to be directly changed.
+      Setters and getter methods allow for more detailed ways of accessing and assigning properties.
+      Factory functions allow us to create object instances quickly and repeatedly.
+      There are different ways to use object destructuring: one way is the property value shorthand and another is
+            destructured assignment.
+      As with any concept, it is a good skill to learn how to use the documentation with objects!
+
+Lesson 9 - Classes
+      JavaScript is an object-oriented programming (OOP) language we can use to model real-world items.
+            In this lesson, you will learn how to make classes. Classes are a tool that developers use to quickly produce similar objects.
+
+      Take, for example, an object representing a dog named halley. This dog’s name (a key) is "Halley"
+            (a value) and has an age (another key) of 3 (another value). We create the halley object below:
+
+            let halley = {
+              _name: 'Halley',
+              _behavior: 0,
+
+              get name() {
+                return this._name;
+              },
+
+              get behavior() {
+                return this._behavior;
+              },
+
+              incrementBehavior() {
+                this._behavior++;
+              }
+            }
+            Now, imagine you own a dog daycare and want to create a catalog of all the dogs who belong to the daycare.
+            Instead of using the syntax above for every dog that joins the daycare, we can create a Dog class that serves
+            as a template for creating new Dog objects. For each new dog, you can provide a value for their name.
+
+      As you can see, classes are a great way to reduce duplicate code and debugging time.
