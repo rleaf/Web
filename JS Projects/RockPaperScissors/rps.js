@@ -56,7 +56,7 @@ function determineWinner(userChoice, computerChoice) {
   }
 
   if(userChoice === 'bomb') {
-    if(computerChoice === 'rock' || computerChoice === 'scissors' ||af computerChoice === 'paper') {
+    if(computerChoice === 'rock' || computerChoice === 'scissors' || computerChoice === 'paper') {
     return 'The user won.';
   }
   }
