@@ -16,10 +16,23 @@
           return Math.floor(Math.random() * (number + 1));
         };
 
-        btn.onclick = function() {
+        // btn.onclick = function() {
+        //   let ranCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'; // 'rgb(0,0,0)'
+        //   document.body.style.backgroundColor = ranCol;
+        // };
+
+
+
+        btn.addEventListener('click', () => {
           let ranCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'; // 'rgb(0,0,0)'
           document.body.style.backgroundColor = ranCol;
-        };
+        })
+
+        // btn.addEventListener('click', (e) => {
+        //   let ranCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'; // 'rgb(0,0,0)'
+        //   e.target.style.backgroundColor = ranCol;
+        //   console.log(e);
+        // })
 
         //btn.onclick = bgChange;
       };
