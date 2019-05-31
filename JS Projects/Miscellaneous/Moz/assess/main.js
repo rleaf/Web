@@ -50,12 +50,14 @@ for (var i = 0; i < 5; i++) {
   };
 };
 
+//setAttribute('') || getAttribute('') || appendChild(); || createElement('');
+
 // for (var i = 1; i < 6; i++) {
-//   var newImage = document.createElement('img');
-//   newImage.setAttribute('src', 'images/pic' + [i] + '.jpg');
+//   let newImage = document.createElement('img');
+//   newImage.setAttribute('img', 'images/pic' + i + '.jpg');
 //   thumbBar.appendChild(newImage);
 //   newImage.onclick = (e) => {
-//     let imgSrc = e.target.getAttribute('src');
+//     let imgSrc = getAttribute('img');
 //     displayImage(imgSrc);
 //   }
 // }
