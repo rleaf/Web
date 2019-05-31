@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Color</title>
+    <style media="screen">
+      button {
+        margin: 10px;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        let btn = document.querySelector('button');
+
+        function random(number) {
+          return Math.floor(Math.random() * (number + 1));
+        };
+
+        btn.onclick = function() {
+          let ranCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')'; // 'rgb(0,0,0)'
+          document.body.style.backgroundColor = ranCol;
+        };
+
+        //btn.onclick = bgChange;
+      };
+    </script>
+  </head>
+  <body>
+    <button type="button" name="button">Change color</button>
+  </body>
+</html>

@@ -16,7 +16,7 @@ var gradientSpeed = 0.002;
 
 let updateGradient = () => {
 
-  if ( $===undefined ) return;
+  //if ( $===undefined ) return;
 
   var c0_0 = colors[colorIndecies[0]]; //62, 35, 255
   var c0_1 = colors[colorIndecies[1]]; // 60, 255, 50
