@@ -1,0 +1,33 @@
+<!--  Ryan Lin, Practice, Group Lab 2 for CIS 200-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>GL2 CIS 200 Practice</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+
+                  var customer = 0;
+                  var index =  0;
+
+                  function getData() {
+                        $.getJSON('http://serenity.rider.edu:9046/ataylor/dbget.py',
+                        function(data)  {
+                              customer = data;
+                              displayCustomer();
+                        });
+                  }
+
+                  function displayCustomer() {
+                        
+                  }
+            </script>
+      </head>
+      <body>
+
+      </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Color Squares</title>
+    <style media="screen">
+      body {
+        margin: 0;
+      }
+      .maindiv {
+        width: 100%;
+        height: 100vh;
+        background-color: red;
+      }
+      .subdiv {
+        float: left;
+        width: 5%;
+        height: 5%;
+      }
+    </style>
+    <script type="text/javascript">
+      window.onload = function() {
+        let main = document.querySelector('.maindiv');
+
+        for (var i = 0; i < 400; i++) {
+          let square = document.createElement('div');
+          square.setAttribute('class', 'subdiv')
+          main.appendChild(square);
+          square.onmouseout = () => {
+            square.style.backgroundColor = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) +')'
+          };
+        };
+
+        function random(colorNum) {
+          return Math.floor(Math.random() * colorNum);
+        }
+      };
+    </script>
+  </head>
+  <body>
+
+    <div class="maindiv">
+
+
+    </div>
+
+  </body>
+</html>

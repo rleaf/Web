@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Object-oriented JS Example</title>
+    <script type="text/javascript">
+
+      // function createNewPerson(name) {
+      //   var obj = {};
+      //   obj.name = name;
+      //   obj.greeting = function() {
+      //     alert('Hi! I\'m ' + obj.name + '.');
+      //   };
+      //   return obj;
+      // }
+      //
+      // Input lines below into JS console
+      //
+      //
+      // var salva = createNewPerson('Salva');
+      // salva.name;
+      // salva.greeting();
+
+      // Constructor Function
+      function Person(first, last, age, gender, interests) {
+        this.name = {
+          first: first,
+          last: last,
+        };
+        this.age = age;
+        this.gender = gender;
+        this.interests = interests;
+        this.bio = function() {
+
+          for (var i = 0; i < this.interests.length; i++) {
+            var interestlist = this.interests[i]
+          }
+          console.log(interestlist);
+
+          if(this.gender === 'female') {
+            alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. She likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+          } else if (this.gender === 'male') {
+            alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. He likes ' + interestlist[i]);
+          } else {
+            alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. It likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+          }
+        };
+        this.greeting = function() {
+          alert(`Hi I'm ${this.name.first}.`);
+        };
+      };
+
+      // Object instance (An object that has been inantiated from a constructor function)
+      var person1 = new Person('Bob', 'Smith', 32, 'male', ['music', 'skiing', 'sleeping', 'eating']);
+
+    </script>
+  </head>
+  <body>
+    <p>This example requires you to enter commands in your browser's JavaScript console.</p>
+  </body>
+</html>
