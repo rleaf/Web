@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      class Person {
+        constructor(first, last, age, gender, interests) {
+          this.name = {
+            first,
+            last
+          };
+          this.age = age;
+          this.gender = gender;
+          this.interests = interests
+        };
+
+        greeting() {
+          console.log(`Hello, I am ${this.name.first}!`);
+        };
+
+        farewell() {
+          console.log(`${this.name.first} has left the building. Bye for now!`);
+        };
+      };
+
+      // Instantiate Person
+
+      let han = new Person('Han', 'Solo', 25, 'Male', ['Smuggling']);
+      // han.greeting(); //Hello, I am Han!
+
+      let leia = new Person('Leia', 'Organa', 19, 'Female', ['Government']);
+      // leia.greeting(); //Hello, I am Leia!
+
+      // Extend Person with Teacher
+
+      class Teacher extends Person {
+        constructor(first, last, age, gender, interests, subject, grade) {
+          super(first, last, age, gender, interests);
+
+
+          this.subject = subject;
+          this.grade = grade;
+        };
+      };
+
+      // Instantiate Teacher
+
+      let snape = new Teacher('Severus', 'Snape', 58, 'Male', ['Potions'], 'Dark Arts', 5);
+
+      snape.greeting();
+      snape.farewell();
+      console.log(snape.age);
+      console.log(snape.subject);
+      console.log(snape.grade);
+
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>
