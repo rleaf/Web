@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript">
+      // Create variables referencing elements in document
+      // Pull JSON data from server via instantiation
+      // response.onload = () => { invoke functions pushing information to DOM }
+      // Functions which push info to DOM
+
+      let header = document.querySelector('header');
+      let section = document.querySelector('section');
+
+      let superHeroes = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+
+      let request = new XMLHttpRequest();
+      request.open('GET', superHeroes);
+      request.responseType = 'json';
+      request.send();
+
+      request.onload = () => {
+        let superHeroes = request.response;
+        populateHeader(superHeroes);
+        populateSection(superHeroes);
+      }
+
+
+
+
+
+
+
+
+    </script>
+  </head>
+
+  <body>
+
+    <header>
+
+    </header>
+
+    <section>
+
+    </section>
+  </body>
+</html>

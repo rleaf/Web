@@ -20,11 +20,15 @@
       </section>
 
     <script>
+
+    // Grab references to the 'header' and 'section' elements in the html
     let header = document.querySelector('header');
     let section = document.querySelector('section');
 
+    // JSON Data URL
     let requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
 
+    // Instantiate the XHR object to create a request
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
     request.responseType = 'json';
@@ -35,6 +39,8 @@
       populateHeader(superHeroes);
       showHeroes(superHeroes);
     }
+
+
 
     function populateHeader(jsonObj) {
       let myH1 = document.createElement('h1');
@@ -49,7 +55,6 @@
 
     function showHeroes(jsonObj) {
       let heroes = jsonObj['members'];
-
       for (var i = 0; i < heroes.length; i++) {
         let myArticle = document.createElement('article');
         let myH2 = document.createElement('h2');
