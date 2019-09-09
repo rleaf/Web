@@ -1,0 +1,122 @@
+<!-- Ryan Lin, Practice CIS 200, Group Lab 2, A Taylor, 4/24  -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Prac</title>
+            <link rel='stylesheet' href='https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css'>
+            <link rel='stylesheet' href='/ataylor/fancy-table.css'>
+            <link rel='stylesheet' href='/ataylor/lms.css'>
+            <script type='text/javascript' src='/ataylor/utilities.js'></script>
+            <script src='https://code.jquery.com/jquery-1.12.4.js'></script>
+            <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+            <script type="text/javascript">
+                  var customer = [];
+                  var index = 0;
+
+                  function getCustomer() {
+/*
+                        $.getJSON('http://serenity.rider.edu:9046/ataylor/dbget.py',
+                        function(data) {
+                              customer = data;
+                              displayCustomer();
+                        });
+*/
+                  customer[0] = {'fname':'John', 'lname':'Tom', 'age':'20', 'gender':'male',
+                                          'address':'2083 Lawrenceville Road', 'city':'Lawrenceville','state':'NJ'}
+                  displayCustomer()
+                  }
+
+                  function displayCustomer() {
+
+                        $('#fname').val(customer[index].fname);
+                        $('#lname').val(customer[index].lname);
+                        $('#age').val(customer[index].age);
+                        $('#gender').val(customer[index].gender);
+                        $('#address').val(customer[index].address);
+                        $('#city').val(customer[index].city);
+                        $('#state').val(customer[index].state);
+                  }
+
+                  function next() {
+                        if (index + 1 >= customer.length) {
+                              alert('no mas');
+                        } else;
+                        index++;
+                        displayCustomer(customer[index]);
+                  }
+
+                  function previous() {
+                        if (index - 1 < 0) {
+                              alert('no mas');
+                        } else;
+                        index--;
+                        displayCustomer(customer[index]);
+                  }
+
+                  function first() {
+                        index = 0;
+                        displayCustomer(customer[index]);
+                  }
+
+                  function last() {
+                        index = zips.length - 1;
+                        displayCustomer(customer[index]);
+                  }
+            </script>
+            <style media="screen">
+                  html, body {
+                        width: 100%;
+                        height: auto;
+                  }
+
+                  #main {
+                        width: auto;
+                        height: auto;
+                        margin: 0 auto;
+                        text-align: center;
+                  }
+                  #centertable {
+                        width: auto;
+                        height: auto;
+                        margin: 0 auto;
+                        padding-top: 10%;
+                  }
+            </style>
+      </head>
+      <body>
+            <div id='main'>
+                  <table id='centertable'>
+                        <tr>
+                              <td>First name:</td>
+                              <td><input type="text" id='fname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Last Name:</td>
+                              <td><input type="text" id='lname' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Age:</td>
+                              <td><input type="text" id='age' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Gender:</td>
+                              <td><input type="text" id='gender' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>Address:</td>
+                              <td><input type="text" id='address' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>City:</td>
+                              <td><input type="text" id='city' name="" value=""></td>
+                        </tr>
+                        <tr>
+                              <td>State:</td>
+                              <td><input type="text" id='state`' name="" value=""></td>
+                        </tr>
+                  </table>
+                  <button type="button" onclick="getCustomer()" name="button">Click</button>
+            </div>
+      </body>
+</html>
