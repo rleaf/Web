@@ -1,0 +1,56 @@
+<!-- Ryan Lin, COM 366, 10/5/19 -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+      <head>
+            <meta charset="utf-8">
+            <title>Ryan Lin, Font Project, COM 366</title>
+            <link rel="stylesheet" href="css/styles.css">
+            <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+            <script
+                  src="https://code.jquery.com/jquery-3.4.1.js"
+                  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+                  crossorigin="anonymous"></script>
+            <script type="text/javascript">
+                  $(window).on("load",function() {
+                        $(window).scroll(function() {
+                              let windowBottom = $(this).scrollTop() + $(this).innerHeight();
+                              $(".fade").each(function() {
+                                    /* Check the location of each desired element */
+                                    let objectBottom = $(this).offset().top + $(this).outerHeight();
+
+                                    /* If the element is completely within bounds of the window, fade it in */
+                                    if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                                          if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                                    } else { //object goes out of view (scrolling up)
+                                          if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                                    }
+                              });
+                        }).scroll(); //invoke scroll-handler on page-load
+                  });
+            </script>
+      </head>
+      <body>
+            <div class="nav-bar-left">
+                  <a href="#">Smile</a>
+            </div>
+            <div class="nav-bar-right">
+                  <ul>
+                        <li><a href="#">One</a></li>
+                        <li><a href="#">Two</a></li>
+                        <li><a href="#">Three</a></li>
+                  </ul>
+            </div>
+            <div class="launch">
+
+            </div>
+            <div class="second">
+                  <p class="fade">a;sdlkfa;ldkfja;sldkfja;sdlfkasd;flka;fdlkj</p>
+            </div>
+            <div class="third">
+                  <p class="fade">adsfadf</p>
+            </div>
+            <div class="fourth">
+                  <p class="fade">adfafd</p>
+            </div>
+      </body>
+</html>
