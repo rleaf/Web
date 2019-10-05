@@ -17,7 +17,6 @@ body, html {
 }
 
 .nav-bar-left {
-
       float: left !important;
 }
 
@@ -38,13 +37,24 @@ body, html {
       float: right;
 }
 
-p {
+.slides {
+
+}
+
+.slides p {
+      color: #000;
+      font-family: 'Raleway', sans-serif;
+      font-size: 36px;
+      font-weight: 400;
+
+      text-align: center;
+      padding-top: 10%;
       margin: 0;
 }
 
 .launch {
       height: 100vh;
-      background-color: green;
+      background-color: grey;
 
 }
 
