@@ -26,9 +26,11 @@ body, html {
       margin: 0;
 }
 
-.nav-bar-right ul li, .nav-bar-right ul a {
-      color: #fff;
+.nav-bar-right ul li, .nav-bar-right ul button {
+      color: #000;
       font-family: 'Raleway', sans-serif;
+      border: none;
+      background: none;
       font-size: 20px;
       text-decoration: none;
       list-style-type: none;
