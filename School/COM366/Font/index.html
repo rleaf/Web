@@ -31,6 +31,9 @@
                   //       .scroll();
                   // });
                   window.onload = function() {
+
+                  $('.load').fadeOut();
+
                   $(function(){
                     $('.fade').fadeIn('slow');
                   });
@@ -52,6 +55,9 @@
             </script>
       </head>
       <body>
+            <div class="load">
+                  <img src="loader/ball-triangle.svg">
+            </div>
             <div class="nav-bar-left">
                   <!-- <a href="#">Smile</a> -->
             </div>
@@ -85,9 +91,13 @@
                         <!-- <p class="fade">adsfasdfasfdadf</p> -->
                   </div>
                   <div class="fourth">
-                        <textarea name="tryMe" rows="5" cols="20" placeholder="Try me"></textarea>
+                        <img src="pics/earth.png" alt="">
+                              <p class="fade">pale<br><span style='color: #5a68b1;'>blue</span><br>dot</p>
+                  </div>
+            </div>
+                  <div class="nth">
+                        <textarea name="tryMe" rows="6" placeholder="Try me..."></textarea>
                   </div>
             </div>
       </body>
-
 </html>
