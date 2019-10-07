@@ -56,7 +56,7 @@ body, html {
 
 .nav-bar-right ul li, .nav-bar-right ul a, .nav-bar-right button {
       color: #fff;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'ryli7-regular', 'Raleway', sans-serif;
       border: none;
       background: none;
       font-size: 20px;
@@ -158,6 +158,18 @@ body, html {
       float: right;
       color: #fff;
       margin: 5% 10% 0 0;
+}
+
+@media screen and (max-width : 1550px) {
+      .fourth p {
+            font-size: 180px;
+      }
+}
+
+.fifth {
+      height: 100vh;
+      background: linear-gradient(#000, #fff);
+      clear: both;
 }
 
 .nth {
