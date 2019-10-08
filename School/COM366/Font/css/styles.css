@@ -155,6 +155,7 @@ body, html {
 .fourth p {
       font-family: 'ryli7-regular', 'Raleway', sans-serif;
       font-size: 240px;
+      text-align: center;
       float: right;
       color: #fff;
       margin: 5% 10% 0 0;
@@ -208,6 +209,32 @@ textarea:focus {
       height: 80vh;
       background: linear-gradient(#000, #fff);
       clear: both;
+}
+
+.seventh {
+      height: 100vh;
+      background-color: #fff;
+}
+
+.seventh p {
+      font-family: 'ryli7-regular', 'Raleway', sans-serif;
+      font-size: 240px;
+      text-align: center;
+      float: left;
+      color: #000;
+      margin: 5% 0 0 10%;
+}
+
+@media screen and (max-width : 1550px) {
+      .seventh p {
+            font-size: 180px;
+      }
+}
+
+.seventh img {
+      width: 50%;
+      height: auto;
+      float: right;
 }
 
 .white-textarea {
