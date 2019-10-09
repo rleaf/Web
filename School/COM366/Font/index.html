@@ -32,26 +32,29 @@
                   // });
                   window.onload = function() {
 
-                  $('.load').fadeOut();
+                        $('.load').fadeOut();
 
-                  $(function(){
-                    $('.fade').fadeIn('slow');
-                  });
+                        $(function(){
+                          $('.fade').fadeIn('slow');
+                        });
 
-                  $(document).ready(function() {
-                      $(window).scroll( function(){
-                          $('.fade').each( function(i){
+                        $(document).ready(function() {
+                            $(window).scroll( function(){
+                                $('.fade').each( function(i){
 
-                              let bottom_of_object = $(this).position().top + $(this).outerHeight();
-                              let bottom_of_window = $(window).scrollTop() + $(window).height();
+                                    let bottom_of_object = $(this).position().top + $(this).outerHeight();
+                                    let bottom_of_window = $(window).scrollTop() + $(window).height();
 
-                              if( bottom_of_window > bottom_of_object ){
-                                  $(this).animate({'opacity':'1'}, 2000);
-                              }
-                          });
-                      });
-                  });
-            };
+                                    if( bottom_of_window > bottom_of_object ){
+                                        $(this).animate({'opacity':'1'}, 2000);
+                                    }
+                                });
+                            });
+                        });
+
+
+
+                  };
             </script>
       </head>
       <body>
