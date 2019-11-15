@@ -1,0 +1,42 @@
+body, html {
+      margin: 0;
+      padding: 0;
+      top: 0;
+}
+
+
+/* Navigation */
+
+.nav-bar {
+      display: block;
+      height: 60px;
+      background-color: pink;
+}
+
+.nav-bar-left ul, .nav-bar-right ul {
+      margin: 0;
+      justify-content: center;
+      vertical-align: middle;
+}
+
+.nav-bar-left ul li, .nav-bar-left ul li a, .nav-bar-right ul li, .nav-bar-right ul li a {
+      list-style-type: none;
+      text-decoration: none;
+      color: #000;
+      /* padding: 0 20px 0 20px; */
+      font-family: 'Roboto Slab', serif;
+      /* font-weight: bold; */
+      font-size: 20px;
+}
+
+.nav-bar-right ul li, .nav-bar-left ul li {
+      /* padding: 10px 20px; */
+}
+
+.nav-bar-left ul li, .nav-bar-left ul li a {
+      float: left;
+}
+
+.nav-bar-right ul li, .nav-bar-right ul li a {
+      float: right;
+}
