@@ -11,6 +11,7 @@ body, html {
       display: block;
       height: 60px;
       background-color: pink;
+
 }
 
 .nav-bar-left ul, .nav-bar-right ul {
@@ -27,6 +28,7 @@ body, html {
       font-family: 'Roboto Slab', serif;
       /* font-weight: bold; */
       font-size: 20px;
+      vertical-align: middle;
 }
 
 .nav-bar-right ul li, .nav-bar-left ul li {
