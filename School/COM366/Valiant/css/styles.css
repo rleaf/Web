@@ -77,10 +77,12 @@ html {
 
 .nav-bar-left a, .nav-bar-right a {
       display: block;
+      font-family: 'Aleo', serif;
       color: #ffffff;
       text-decoration: none;
       padding: 14px 16px;
       text-align: center;
+
 }
 
 .nav-bar a:hover {
@@ -129,6 +131,7 @@ html {
 }
 
 .right p {
+      font-family: 'Aleo', serif;
       padding: 20vh 5vh;
       font-size: 18px;
 }
@@ -151,12 +154,14 @@ html {
 
 .portfolio {
       /* justify-content: center; */
+      width: 100vw;
+      height: 100vh;
 }
 
 .gallery {
       /* background-color: #70b6b6; */
-      width: 80vw;
-      height: inherit;
+      width: 60vw;
+      /* height: 100vh; */
       margin-left: auto;
       margin-right: auto;
 }
@@ -166,4 +171,18 @@ html {
       height: 100%;
       margin: 15px 0;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.more-button {
+      clear: both;
+      text-align: center;
+      padding-top: 10vh;
+}
+
+.more-button button {
+      font-family: 'Aleo', serif;
+      border: none;
+      color: #000;
+      padding: 15px 30px;
+      font-weight: bold;
 }
