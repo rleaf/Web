@@ -106,6 +106,17 @@ body, html {
       font-size: 18px;
 }
 
+/* Bootstrap 3 requires custom css to remove row gutters */
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  & > [class^="col-"],
+  & > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
 .portfolio {
 
@@ -127,6 +138,12 @@ body, html {
       /* height: 100vh; */
       margin-left: auto;
       margin-right: auto;
+}
+
+@media (max-width: 1500px) {
+      .gallery {
+            width: 70vw;
+      }
 }
 
 .galleryimg img {
@@ -151,8 +168,8 @@ body, html {
 }
 
 .contact {
+      
       width: 100%;
       height: 100vh;
       background-color: #7e1a1a;
-      clear: both;
 }
