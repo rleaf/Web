@@ -2,33 +2,38 @@ body, html {
       margin: 0;
       padding: 0;
       top: 0;
+
+}
+
+html {
+      scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+      display: none;
 }
 
 
 /* Navigation */
 
-.nav-bar {
+/* .nav-bar {
       display: block;
       height: 60px;
       background-color: pink;
-
+      position: fixed;
+      width: 100vw;
 }
 
 .nav-bar-left ul, .nav-bar-right ul {
       margin: 0;
-      justify-content: center;
-      vertical-align: middle;
 }
 
 .nav-bar-left ul li, .nav-bar-left ul li a, .nav-bar-right ul li, .nav-bar-right ul li a {
       list-style-type: none;
       text-decoration: none;
       color: #000;
-      /* padding: 0 20px 0 20px; */
       font-family: 'Roboto Slab', serif;
-      /* font-weight: bold; */
       font-size: 20px;
-      vertical-align: middle;
 }
 
 .nav-bar-right ul li, .nav-bar-left ul li {
@@ -41,30 +46,79 @@ body, html {
 
 .nav-bar-right ul li, .nav-bar-right ul li a {
       float: right;
+} */
+
+.nav-bar {
+      overflow: hidden;
+      display: block;
+      top: 0;
+      width: 100vw;
+      position: fixed;
+      background-color: #2e2e2e;
+      z-index: 99999;
+
 }
+
+.nav-bar-left ul {
+      float: left;
+      display: flex;
+      margin: 0;
+}
+
+.nav-bar-right ul {
+      float: right;
+      display: flex;
+      margin: 0;
+}
+
+.nav-bar-left li, .nav-bar-right li {
+      list-style-type: none;
+}
+
+.nav-bar-left a, .nav-bar-right a {
+      display: block;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 14px 16px;
+      text-align: center;
+}
+
+.nav-bar a:hover {
+      background-color: #aaaaaa;
+      text-decoration: none;
+      color: #000;
+
+}
+
+/* ############################################ */
 
 .launch {
       width: 100%;
       height: 100vh;
-      background-color: rgb(75, 75, 75);
+      background-color: #ffffff;
 }
 
 .about {
+      padding-top: 15vh;
       width: 100%;
       height: 100vh;
-      background-color: #827979;
+      background-color: #ffffff;
 }
 
 .left {
+      /* display: block; */
       float: left;
       width: 50%;
       height: auto;
 }
 
 .left img {
-      width: 90%;
       /* padding: 10px 5%; */
-      float: left;
+      /* float: left; */
+      display: block;
+      width: 60%;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 .right {
@@ -75,6 +129,7 @@ body, html {
 }
 
 .right p {
+      padding: 20vh 5vh;
       font-size: 18px;
 }
 
@@ -82,7 +137,7 @@ body, html {
 .portfolio {
       width: 100%;
       height: 100vh;
-      background-color: #82c19b;
+      background-color: #ffffff;
 
 }
 
@@ -90,6 +145,25 @@ body, html {
 .contact {
       width: 100%;
       height: 100vh;
-      background-color: #c1a082;
+      background-color: #ffffff;
 
+}
+
+.portfolio {
+      /* justify-content: center; */
+}
+
+.gallery {
+      /* background-color: #70b6b6; */
+      width: 80vw;
+      height: inherit;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+.galleryimg img {
+      width: 100%;
+      height: 100%;
+      margin: 15px 0;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }

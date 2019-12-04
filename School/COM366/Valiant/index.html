@@ -6,27 +6,56 @@
             <meta charset="utf-8">
             <title>Valiant</title>
             <link rel="stylesheet" href="css/styles.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
             <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
-            <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+            <script type="text/javascript">
+                  // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                  //     anchor.addEventListener('click', function (e) {
+                  //         e.preventDefault();
+                  //
+                  //         document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  //             behavior: 'smooth'
+                  //         });
+                  //     });
+                  // });
+                  //
+                  // $(document).ready(function() {
+                  //       $('a[href^="#"]').on('click',function(e) {
+                  //             e.preventDefault();
+                  //
+                  //             let target = this.hash;
+                  //             let $target = $(target);
+                  //
+                  //             $('html, body').animate({
+                  //                   'scrollTop': $target.offset().scrollTop
+                  //             }, 8000, 'swing', function () {
+                  //                   window.location.hash = target;
+                  //             });
+                  //       });
+                  // });
+            </script>
+
       </head>
       <body>
             <div class="nav-bar">
                   <div class="nav-bar-left">
                         <ul>
-                              <li><a href="#">Home (Logo can go here)</a></li>
+                              <li><a href="#launch">HOME (Logo can go here)</a></li>
                         </ul>
                   </div>
 
                   <div class="nav-bar-right">
                         <ul>
-                              <li><a href="#contact">Contact</a></li>
-                              <li><a href="#portfolio">Portfolio</a></li>
-                              <li><a href="#about">About</a></li>
+                              <li><a href="#about">ABOUT</a></li>
+                              <li><a href="#portfolio">PORTFOLIO</a></li>
+                              <li><a href="#contact">CONTACT</a></li>
                         </ul>
                   </div>
 
             </div>
-            <div class="launch">
+            <div class="launch" id="launch">
 
             </div>
             <div class="about" id="about">
@@ -41,7 +70,34 @@
                   </div>
             </div>
             <div class="portfolio" id="portfolio">
-
+                  <div class="gallery">
+                        <div class="galleryimg">
+                              <div class="img-row">
+                                    <div class="col-sm-4">
+                                          <a href="img/door.jpg">
+                                                <img src="img/door.jpg" alt="">
+                                          </a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <img src="img/mesh.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <img src="img/canoerack.jpg" alt="">
+                                    </div>
+                              </div>
+                              <div class="img-row">
+                                    <div class="col-sm-4">
+                                          <img src="img/wedge.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <img src="img/table.jpg" alt="">
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <img src="img/cabinet.jpg" alt="">
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
             </div>
             <div class="contact" id="contact">
 
