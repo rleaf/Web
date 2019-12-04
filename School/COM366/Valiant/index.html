@@ -7,20 +7,22 @@
             <title>Valiant</title>
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
             <link href="https://fonts.googleapis.com/css?family=Aleo&display=swap" rel="stylesheet">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
             <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
             <script type="text/javascript">
-                  // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                  //     anchor.addEventListener('click', function (e) {
-                  //         e.preventDefault();
-                  //
-                  //         document.querySelector(this.getAttribute('href')).scrollIntoView({
-                  //             behavior: 'smooth'
-                  //         });
-                  //     });
-                  // });
-                  //
+                  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                      anchor.addEventListener('click', function (e) {
+                          e.preventDefault();
+
+                          document.querySelector(this.getAttribute('href')).scrollIntoView({
+                              behavior: 'smooth'
+                          });
+                      });
+                  });
+
                   // $(document).ready(function() {
                   //       $('a[href^="#"]').on('click',function(e) {
                   //             e.preventDefault();
@@ -35,6 +37,26 @@
                   //             });
                   //       });
                   // });
+
+                  $(document).ready(function() {
+
+                        let prevScrollpos = window.pageYOffset;
+
+                        window.onscroll = function() {
+                              let currentScrollPos = window.pageYOffset;
+                              let nav = $('.nav-bar')[0]
+                              // let nav = document.getElementsByClassName('nav-bar')
+
+                              if (prevScrollpos > currentScrollPos) {
+                                    // document.getElementsByClassName("nav-bar").style.top = "0";
+                                    nav.style.top = "0";
+                                    } else {
+                                    // document.getElementsByClassName("nav-bar").style.top = "-50px";
+                                    nav.style.top = "-50px";
+                                    }
+                                    prevScrollpos = currentScrollPos;
+                        }
+                  });
             </script>
 
       </head>
@@ -59,56 +81,60 @@
 
             </div>
             <div class="about" id="about">
-                  <div class="left">
-                        <img src="img/portrait.png" alt="">
-                  </div>
-                  <div class="right">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <div class="row">
+                        <div class="col-sm-6">
+                              <img src="img/portrait.png" alt="">
+                        </div>
+                        <div class="col-sm-6">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
                   </div>
             </div>
             <div class="portfolio" id="portfolio">
                   <div class="gallery">
                         <div class="galleryimg">
-                              <div class="col-sm-4">
-                                    <a href="img/door.jpg">
-                                          <img src="img/door.jpg" alt="">
-                                    </a>
+                              <div class="row">
+                                    <div class="col-sm-4">
+                                          <a href="img/door.jpg">
+                                                <img src="img/door.jpg" alt="">
+                                          </a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <a href="img/mesh.jpg">
+                                                <img src="img/mesh.jpg" alt="">
+                                          </a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <a href="img/canoerack.jpg">
+                                                <img src="img/canoerack.jpg" alt="">
+                                          </a>
+                                    </div>
                               </div>
-                              <div class="col-sm-4">
-                                    <a href="img/mesh.jpg">
-                                          <img src="img/mesh.jpg" alt="">
-                                    </a>
-                              </div>
-                              <div class="col-sm-4">
-                                    <a href="img/canoerack.jpg">
-                                          <img src="img/canoerack.jpg" alt="">
-                                    </a>
-                              </div>
-                              <div class="col-sm-4">
-                                    <a href="img/wedge.jpg">
-                                          <img src="img/wedge.jpg" alt="">
-                                    </a>
-                              </div>
-                              <div class="col-sm-4">
-                                    <a href="img/table.jpg">
-                                          <img src="img/table.jpg" alt="">
-                                    </a>
-                              </div>
-                              <div class="col-sm-4">
-                                    <a href="img/cabinet.jpg">
-                                          <img src="img/cabinet.jpg" alt="">
-                                    </a>
+                              <div class="row">
+                                    <div class="col-sm-4">
+                                          <a href="img/wedge.jpg">
+                                                <img src="img/wedge.jpg" alt="">
+                                          </a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <a href="img/table.jpg">
+                                                <img src="img/table.jpg" alt="">
+                                          </a>
+                                    </div>
+                                    <div class="col-sm-4">
+                                          <a href="img/cabinet.jpg">
+                                                <img src="img/cabinet.jpg" alt="">
+                                          </a>
+                                    </div>
                               </div>
                         </div>
-
-
                   </div>
-                                    <div class="more-button">
-                                          <button type="button" name="button" onclick="window.location.href = 'https://www.instagram.com/dudeinacabin/';">SEE MORE</button>
-                                    </div>
+                  <div class="more-button">
+                        <button type="button" name="button" onclick="window.location.href = 'https://www.instagram.com/dudeinacabin/';">SEE MORE</button>
+                  </div>
 
             </div>
             <div class="contact" id="contact">
