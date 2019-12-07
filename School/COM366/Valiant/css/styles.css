@@ -1,3 +1,9 @@
+:root {
+      --mainColor: #7e1a1a;
+      --mainTint: #ab6262;
+      --secondaryColor: #dbdbdb;
+}
+
 body, html {
       margin: 0;
       padding: 0;
@@ -5,13 +11,47 @@ body, html {
 
 }
 
-/* html {
+html {
       scroll-behavior: smooth;
-} */
+}
 
 ::-webkit-scrollbar {
       display: none;
 }
+
+.container {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+}
+
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
 
 
 
@@ -23,13 +63,18 @@ body, html {
       top: 0;
       width: 100vw;
       position: fixed;
-      background-color: #2e2e2e;
+      background-color: transparent;
       z-index: 99999;
+      transition: top 0.3s;
       top: 0;
 
 }
 
-.nav-bar-left ul {
+.nav-bar-scrolled {
+      background-color: #0f0f0f;
+}
+
+.nav-bar-left  {
       float: left;
       display: flex;
       margin: 0;
@@ -48,6 +93,7 @@ body, html {
 .nav-bar-left a, .nav-bar-right a {
       display: block;
       font-family: 'Aleo', serif;
+      font-size: 18px;
       color: #ffffff;
       text-decoration: none;
       padding: 14px 16px;
@@ -64,17 +110,35 @@ body, html {
 
 /* ############################################ */
 
+
+
+.header p {
+      text-align: center;
+      font-size: 36px;
+      color: var(--mainColor);
+      font-family: 'Aleo', serif;
+      font-weight: bold;
+      padding: 5% 0;
+      margin: 0 auto;
+
+}
+
 .launch {
       width: 100%;
       height: 100vh;
-      background-color: #ab6262;
+      background-color: var(--mainColor);
 }
 
 .about {
-      padding-top: 15vh;
       width: 100%;
-      height: 100vh;
-      background-color: #ffffff;
+      height: 105vh;
+      background-color: var(--secondaryColor);
+      /* background: linear-gradient(var(--mainColor), var(--secondaryColor)); */
+      background-image:linear-gradient(90deg, rgba(255,255,255,.25) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(255,255,255,.25) 1px, rgba(0,0,0,0) 1px);
+      background-position:0px 1px;
+      background-repeat:repeat;
+      background-size:20px 20px;
+
 }
 
 .left {
@@ -84,7 +148,7 @@ body, html {
       height: auto;
 }
 
-.col-sm-6 img {
+.col-md-6 img {
       /* padding: 10px 5%; */
       /* float: left; */
       /* display: block; */
@@ -100,7 +164,7 @@ body, html {
       text-align: center;
 }
 
-.col-sm-6 p {
+.col-md-6 p {
       font-family: 'Aleo', serif;
       padding: 20vh 5vh;
       font-size: 18px;
@@ -119,26 +183,17 @@ body, html {
 }
 
 .portfolio {
-
       width: 100%;
-      height: 100vh;
-      background-color: #ffffff;
-
-}
-
-.portfolio {
-      /* justify-content: center; */
-      width: 100vw;
-      /* height: 100vh; */
-      margin: auto;
+      /* height: 105vh; */
+      background-color: var(--mainColor);
 }
 
 .gallery {
       /* background-color: #70b6b6; */
-      width: 60vw;
-      height: 100vh;
-      margin-left: auto;
-      margin-right: auto;
+      /* width: 60vw; */
+      /* height: 100vh; */
+      /* float: right; */
+      /* padding-right: 5%; */
 }
 
 @media (max-width: 1500px) {
@@ -149,7 +204,9 @@ body, html {
 
 .galleryimg {
       margin: auto;
-      background-color: rgb(70, 160, 218);
+      background-color: transparent;
+      width: 60vw;
+
 
 
 }
@@ -173,14 +230,27 @@ body, html {
       border: none;
       color: #000;
       padding: 15px 30px;
+      margin-bottom: 100px;
       font-weight: bold;
 }
 
 .contact {
-      display: block;
-      margin: auto;
       width: 100%;
       height: 100vh;
-      background-color: #7e1a1a;
       clear: both;
+      background-color: var(--secondaryColor);
+}
+
+.transition {
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+}
+
+.grid {
+      background-image:linear-gradient(90deg, rgba(255,255,255,.25) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(255,255,255,.25) 1px, rgba(0,0,0,0) 1px);
+      background-position:0px 1px;
+      background-repeat:repeat;
+      background-size:20px 20px;
 }

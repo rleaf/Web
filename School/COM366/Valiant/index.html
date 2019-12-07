@@ -21,69 +21,50 @@
                       });
                   });
 
-                  // $(document).ready(function() {
-                  //       $('a[href^="#"]').on('click',function(e) {
-                  //             e.preventDefault();
-                  //
-                  //             let target = this.hash;
-                  //             let $target = $(target);
-                  //
-                  //             $('html, body').animate({
-                  //                   'scrollTop': $target.offset().scrollTop
-                  //             }, 8000, 'swing', function () {
-                  //                   window.location.hash = target;
-                  //             });
-                  //       });
-                  // });
 
                   $(document).ready(function() {
+                        $(window).scroll(function() {
 
-                        let prevScrollpos = window.pageYOffset;
-
-                        window.onscroll = function() {
-                              let currentScrollPos = window.pageYOffset;
-                              let nav = $('.nav-bar')[0]
-                              // let nav = document.getElementsByClassName('nav-bar')
-
-                              if (prevScrollpos > currentScrollPos) {
-                                    // document.getElementsByClassName("nav-bar").style.top = "0";
-                                    nav.style.top = "0";
-                                    } else {
-                                    // document.getElementsByClassName("nav-bar").style.top = "-50px";
-                                    nav.style.top = "-50px";
-                                    }
-                                    prevScrollpos = currentScrollPos;
+                  	if ($(window).scrollTop() > 100 ){
+                   		$('.nav-bar').addClass('nav-bar-scrolled');
                         }
+                        else {
+                              $('.nav-bar').removeClass('nav-bar-scrolled');
+                        }
+                        });
                   });
+
             </script>
 
       </head>
       <body>
-            <div class="nav-bar">
-                  <div class="nav-bar-left">
-                        <ul>
-                              <li><a href="#launch">HOME (Logo can go here)</a></li>
-                        </ul>
-                  </div>
+            <div class="nav-bar transition">
+                  <div class="container">
+                        <div class="nav-bar-left">
+                              <a href="#launch">VALIANT</a>
+                        </div>
 
-                  <div class="nav-bar-right">
-                        <ul>
-                              <li><a href="#about">ABOUT</a></li>
-                              <li><a href="#portfolio">PORTFOLIO</a></li>
-                              <li><a href="#contact">CONTACT</a></li>
-                        </ul>
+                        <div class="nav-bar-right">
+                              <ul>
+                                    <li><a href="#about">ABOUT</a></li>
+                                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                                    <li><a href="#contact">CONTACT</a></li>
+                              </ul>
+                        </div>
                   </div>
-
             </div>
             <div class="launch" id="launch">
 
             </div>
             <div class="about" id="about">
+                  <div class="header">
+                        <p>ABOUT</p>
+                  </div>
                   <div class="row no-gutters">
-                        <div class="col-sm-6">
+                        <div class="col-md-6">
                               <img src="img/portrait.png" alt="">
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-md-6">
                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -92,51 +73,57 @@
                   </div>
             </div>
             <div class="portfolio" id="portfolio">
+                  <div class="header">
+                        <p>WORK</p>
+                  </div>
                   <div class="gallery">
                         <div class="galleryimg">
                               <div class="row">
-                                    <div class="col-sm-4">
+                                    <div class="col-md-4">
                                           <a href="img/door.jpg">
                                                 <img src="img/door.jpg" class="img-responsive" alt="">
                                           </a>
                                     </div>
-                                    <div class="col-sm-4 ">
+                                    <div class="col-md-4 ">
                                           <a href="img/mesh.jpg">
                                                 <img src="img/mesh.jpg" class="img-responsive" alt="">
                                           </a>
                                     </div>
-                                    <div class="col-sm-4 ">
+                                    <div class="col-md-4 ">
                                           <a href="img/canoerack.jpg">
                                                 <img src="img/canoerack.jpg" class="img-responsive" alt="">
                                           </a>
                                     </div>
                               </div>
                               <div class="row">
-                                    <div class="col-sm-4 ">
+                                    <div class="col-md-4 ">
                                           <a href="img/wedge.jpg">
                                                 <img src="img/wedge.jpg" class="img-responsive" alt="">
                                           </a>
                                     </div>
-                                    <div class="col-sm-4 ">
+                                    <div class="col-md-4 ">
                                           <a href="img/table.jpg">
                                                 <img src="img/table.jpg" class="img-responsive" alt="">
                                           </a>
                                     </div>
-                                    <div class="col-sm-4 ">
+                                    <div class="col-md-4 ">
                                           <a href="img/cabinet.jpg">
                                                 <img src="img/cabinet.jpg" class="img-responsive" alt="">
                                           </a>
                                     </div>
                               </div>
                         </div>
+                              <div class="more-button">
+                                    <button type="button" name="button" onclick="window.location.href = 'https://www.instagram.com/dudeinacabin/';">SEE MORE</button>
+                              </div>
                   </div>
-                  <div class="more-button">
-                        <button type="button" name="button" onclick="window.location.href = 'https://www.instagram.com/dudeinacabin/';">SEE MORE</button>
-                  </div>
+
 
             </div>
             <div class="contact" id="contact">
-
+                  <div class="header">
+                        <p>CONTACT</p>
+                  </div>
             </div>
       </body>
 </html>
