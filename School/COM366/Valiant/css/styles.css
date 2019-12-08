@@ -95,7 +95,7 @@ html {
 .nav-bar-left a, .nav-bar-right a {
       display: block;
       font-family: 'Aleo', serif;
-      font-size: 18px;
+      font-size: 20px;
       color: #ffffff;
       text-decoration: none;
       padding: 14px 16px;
@@ -120,7 +120,7 @@ html {
 
 .header p {
       text-align: center;
-      font-size: 56px;
+      font-size: 76px;
       color: var(--mainColor);
       font-family: 'Aleo', serif;
       font-weight: bold;
@@ -164,6 +164,8 @@ html {
       height: auto;
 }
 
+
+
 .col-md-6 img {
       /* padding: 10px 5%; */
       /* float: left; */
@@ -173,17 +175,23 @@ html {
       margin: auto;
 }
 
+.col-md-6 p {
+      font-family: 'Aleo', serif;
+      padding-top: 15vh;
+      font-size: 24px;
+}
+
+.vcenter {
+      display: inline-block;
+      vertical-align: middle;
+      float: none;
+}
+
 .right {
       float: right;
       width: 50%;
       height: auto;
       text-align: center;
-}
-
-.col-md-6 p {
-      font-family: 'Aleo', serif;
-      padding: 20vh 5vh;
-      font-size: 18px;
 }
 
 /* Bootstrap 3 requires custom css to remove row gutters */
@@ -199,6 +207,7 @@ html {
 }
 
 .portfolio {
+      position: relative;
       width: 100%;
       /* height: 105vh; */
       background-color: var(--mainColor);
@@ -274,12 +283,14 @@ html {
       clear: both;
       text-align: center;
       padding-top: 10vh;
+      transition: 0.5s;
 }
 
 .more-button button {
       font-family: 'Aleo', serif;
+      font-size: 18px;
       border: none;
-      color: #000;
+      color: var(--mainBlack);
       padding: 15px 30px;
       margin-bottom: 100px;
       font-weight: bold;
@@ -331,4 +342,32 @@ html {
       -moz-transition: all 0.5s ease-in-out;
       -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
+}
+
+.rtl {
+      /* fill: var(--secondaryColor); */
+      height: 10vh;
+      width: 100%;
+      position: absolute;
+}
+
+.launchsvg {
+      fill: var(--secondaryColor);
+      bottom: 0;
+}
+
+.portfoliosvg {
+      fill: var(--mainColor);
+      top: -10vh;
+}
+
+.angle {
+      position: relative;
+      height: 300px;
+      width: 200%;
+      right: 50%;
+      top: -15%;
+      background-color: var(--mainColor);
+      transform: rotate(-8deg);
+      /* z-index: -999; */
 }
