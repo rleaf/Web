@@ -106,7 +106,7 @@ html {
 .nav-bar a:hover {
       background-color: var(--secondaryColor);
       text-decoration: none;
-      color: #000;
+      color: var(--mainBlack);
 
 }
 
@@ -227,9 +227,9 @@ html {
       left: 50%;
       transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
-      border-style: solid;
-      border-color: var(--secondaryColor);
-      border-width: thin;
+      border: 1px solid var(--secondaryColor);
+      text-align: center;
+
 }
 
 .img-text p {
@@ -285,6 +285,40 @@ html {
       font-weight: bold;
 }
 
+.banner {
+      background-color: var(--mainShade);
+}
+
+
+.container > hr {
+      width: 15%;
+      border: 1px solid var(--secondaryColor);
+}
+
+.col-md-4 > h2 {
+      font-family: 'Aleo', serif;
+      color: var(--secondaryColor);
+      text-align: center;
+      padding-top: 30px;
+}
+
+.banner .container > p {
+      font-family: 'Aleo', serif;
+      font-size: 24px;
+      color: var(--secondaryColor);
+      text-align: center;
+      padding-top: 180px;
+
+}
+
+.banner .container .col-md-4 > p {
+      font-family: 'Aleo', serif;
+      font-size: 22px;
+      color: var(--secondaryColor);
+      text-align: center;
+
+}
+
 .contact {
       width: 100%;
       height: 100vh;
@@ -298,10 +332,3 @@ html {
       -o-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
 }
-
-/* .grid {
-      background-image:linear-gradient(90deg, rgba(255,255,255,.25) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(255,255,255,.25) 1px, rgba(0,0,0,0) 1px);
-      background-position:0px 1px;
-      background-repeat:repeat;
-      background-size:20px 20px;
-} */
