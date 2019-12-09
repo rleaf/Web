@@ -130,26 +130,33 @@ html {
 
 }
 
-
-
 .launch {
       width: 100%;
       height: 110vh;
-      background-color: var(--mainColor);
-      /* background: linear-gradient(var(--mainShade), var(--mainColor), var(--mainShade)); */
-      background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
-      /* background-repeat:repeat; */
-      background-size: 20px 20px;
 }
 
 .launch .logo {
       background: url(../img/logo.png) center center no-repeat;
       background-size: 50%;
-      width: 100%;
-      height: 100%;
+      width: inherit;
+      height: inherit;
+}
+
+.fixed-bg {
+      width: 100vw;
+      height: 110vh;
+      position: fixed;
+      background-color: var(--mainColor);
+      /* background: linear-gradient(var(--mainShade), var(--mainColor), var(--mainShade)); */
+      /* background-repeat:repeat; */
+      background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
+      background-size: 20px 20px;
+      z-index: -99;
 }
 
 .about {
+   /* position: relative; */
+      /* height: 90vh; */
       width: 100%;
       background-color: var(--secondaryColor);
 
@@ -206,10 +213,10 @@ html {
       position: relative;
       width: 100%;
       /* height: 110vh; */
-      background-color: var(--mainColor);
-      background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
       /* background-repeat:repeat; */
-      background-size: 20px 20px;
+      /* background-color: var(--mainColor);
+      background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
+      background-size: 20px 20px; */
 }
 
 @media (max-width: 1500px) {
@@ -350,53 +357,98 @@ html {
       position: absolute;
 }
 
-.launchsvg {
+.launch-about {
       fill: var(--secondaryColor);
+      width: 100%;
       bottom: -10vh;
-}
+      position: absolute;
+      /* background-color: var(--mainColor);
+      background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
+      background-repeat:repeat;
+      background-position: 0 3px;
+      background-size: 20px 20px; */
 
-.portfoliosvg {
-      fill: var(--secondaryColor);
-      /* top: 0; */
 }
 
 .divider {
   height: 10vh;
+  background: transparent;
 }
+
 .about-portfolio {
+      fill: var(--secondaryColor);
       /* background-color: var(--mainTint); */
-      background-color: var(--mainColor);
+      /* background-color: var(--mainColor);
       background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
       background-repeat:repeat;
       background-position: 0 -3px;
-      background-size: 20px 20px;
+      background-size: 20px 20px; */
 
 }
 
+.portfolio-contact {
+   /* background-color: var(--mainTint); */
+   fill: var(--secondaryColor);
+}
+
 .footer {
+   display: block;
    position: absolute;
    bottom: 0;
    width: 100vw;
-   height: 200px;
+   overflow: hidden;
+   padding-bottom: 5%;
 }
 
 .footer .container {
    width: 30vw;
    text-align: center;
-
 }
 
-.container > .instasvg {
-   background-image: url(../svg/ic_instagram.svg);
-   background-repeat: no-repeat;
-   background-position: center;
-   background-size: 30%;
+/* @media (max-width: 1450px) {
+   .footer .container {
+      width: 30vw;
+   }
+} */
+
+.container .col-md-4 a {
+   display: inline-block;
+   width: 55px;
    height: 55px;
-
+   overflow: hidden;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   padding-top: 10%;
+   margin: 0;
 }
 
-.footer .container p {
+.container .instasvg a {
+   background-image: url(../svg/ic_instagram.svg);
+}
+
+.container .twittersvg a {
+   background-image: url(../svg/ic_twitter.svg);
+}
+
+.container .facebooksvg a {
+   background-image: url(../svg/ic_facebook.svg);
+}
+
+/* @media (max-width: 991px) {
+   .container .col-md-4 {
+      width: 25%;
+      display: inline-block;
+   }
+} */
+
+.footer-text {
+   display: inline-block;
+}
+
+.footer .container .footer-text p {
    font-family: 'Aleo', serif;
    font-size: 18px;
    text-align: center;
+   margin-top: 10px;
 }
