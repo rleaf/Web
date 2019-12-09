@@ -5,25 +5,12 @@
       <head>
             <meta charset="utf-8">
             <title>Valiant</title>
-            <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-            <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+            <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+            <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
             <link rel="stylesheet" href="css/styles.css">
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-            <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script> -->
-            <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
             <script type="text/javascript">
-                  // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                  //     anchor.addEventListener('click', function (e) {
-                  //         e.preventDefault();
-                  //
-                  //         document.querySelector(this.getAttribute('href')).scrollIntoView({
-                  //             behavior: 'smooth'
-                  //         });
-                  //     });
-                  // });
-
-
                   $(document).ready(function() {
                         $(window).scroll(function() {
 
@@ -34,21 +21,6 @@
                                     $('.nav-bar').removeClass('nav-bar-scrolled');
                               }
                         });
-
-                        // $(document).scroll(function() {
-                        //       $('.square').each(function(i) {
-                        //
-                        //             let bottom_of_object = $(this).position().top + $(this).outerHeight();
-                        //             let bottom_of_window = $(window).scrollTop() + $(window).height();
-                        //
-                        //             if (bottom_of_window > bottom_of_object) {
-                        //                   console.log('toads');
-                        //                   $('.square').slideDown(2000);
-                        //                   // $('.square').slideUp(2000);
-                        //             }
-                        //       })
-                        // })
-
                   });
 
             </script>
@@ -82,32 +54,33 @@
                   </svg>
             </div>
             <div class="about" id="about">
-                  <!-- <div class="angle">
-
-                  </div> -->
                   <div class="header">
                         <p>ABOUT</p>
                   </div>
-                  <div class="row no-gutters">
-                        <div class="col-md-6 vcenter">
-                              <img src="img/portrait.png" alt="">
-                        </div>
-                        <div class="col-md-6 vcenter">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        </div>
+                  <div class="large-container">
+                    <div class="row">
+                          <div class="col-md-6 vcenter">
+                                <img src="img/portrait.png" alt="">
+                          </div>
+                          <div class="col-md-6 vcenter">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                      Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                          </div>
+                    </div>
                   </div>
             </div>
-            <div class="portfolio" id="portfolio">
+            <div class="divider about-portfolio">
                   <svg  class="rtl portfoliosvg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-                        <polygon points="0,100 100,0 100,100"/>
+                    <polygon points="0,0 100,0 0,100"/>
                   </svg>
+            </div>
+            <div class="portfolio" id="portfolio">
                   <!-- <div class="header">
                         <p>WORK</p>
                   </div> -->
-                  <div style="padding: 5% 0;">
+                  <div style="padding: 2% 0;">
 
                   </div>
                   <div class="gallery">
@@ -172,28 +145,46 @@
 
 
             </div>
-            <div class="banner">
-                  <div class="container">
-                        <p>Custom Designed</p>
-                        <hr>
-                        <div class="col-md-4">
-                              <!-- <h2>asdf</h2> -->
-                              <p>Custom Design</p>
-                        </div>
-                        <div class="col-md-4">
-                              <!-- <h2>asdf</h2> -->
-                              <p>Reliably Engineered</p>
-                        </div>
-                        <div class="col-md-4">
-                              <!-- <h2>asdf</h2> -->
-                              <p>toads</p>
-                        </div>
-                  </div>
-            </div>
+
             <div class="contact" id="contact">
+               <div class="banner">
+                  <div class="container">
+                     <p>Custom Designed</p>
+                     <hr>
+                     <div class="col-md-4">
+                        <!-- <h2>asdf</h2> -->
+                     <p>Custom Design</p>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- <h2>asdf</h2> -->
+                    <p>Reliably Engineered</p>
+                  </div>
+                  <div class="col-md-4">
+                    <!-- <h2>asdf</h2> -->
+                    <p>toads</p>
+                  </div>
+                </div>
+              </div>
                   <div class="header">
                         <p>CONTACT</p>
                   </div>
+
+               <div class="footer">
+                  <div class="container">
+                     <div class="col-md-4 instasvg">
+                        
+                     </div>
+                     <div class="col-md-4 twittersvg">
+                        toad
+                     </div>
+                     <div class="col-md-4 facebooksvg">
+                        toad
+                     </div>
+                     <p>toads</p>
+                     </div>
+
+                  </div>
+               </div>
             </div>
       </body>
 </html>

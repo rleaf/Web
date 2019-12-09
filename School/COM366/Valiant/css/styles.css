@@ -95,8 +95,8 @@ html {
 .nav-bar-left a, .nav-bar-right a {
       display: block;
       font-family: 'Aleo', serif;
-      font-size: 20px;
-      color: #ffffff;
+      font-size: 18px;
+      color: var(--secondaryColor);
       text-decoration: none;
       padding: 14px 16px;
       text-align: center;
@@ -124,15 +124,19 @@ html {
       color: var(--mainColor);
       font-family: 'Aleo', serif;
       font-weight: bold;
-      padding: 5% 0;
+      padding-top: 3%;
+      padding-bottom: 3%;
       margin: 0 auto;
 
 }
 
+
+
 .launch {
       width: 100%;
-      height: 100vh;
+      height: 110vh;
       background-color: var(--mainColor);
+      /* background: linear-gradient(var(--mainShade), var(--mainColor), var(--mainShade)); */
       background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
       /* background-repeat:repeat; */
       background-size: 20px 20px;
@@ -147,14 +151,14 @@ html {
 
 .about {
       width: 100%;
-      height: 105vh;
       background-color: var(--secondaryColor);
-      /* background: linear-gradient(var(--mainColor), var(--secondaryColor)); */
-      /* background-image:linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px); */
-      background-position:0px 1px;
-      background-repeat:repeat;
-      background-size:20px 20px;
 
+}
+
+.large-container {
+      width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
 }
 
 .left {
@@ -168,30 +172,22 @@ html {
 
 .col-md-6 img {
       /* padding: 10px 5%; */
-      /* float: left; */
-      /* display: block; */
-      display: flex;
-      width: 60%;
+      width: 80%;
       margin: auto;
+      display: flex;
 }
 
 .col-md-6 p {
       font-family: 'Aleo', serif;
-      padding-top: 15vh;
+      padding: 15vh 0;
       font-size: 24px;
+      text-align: center;
 }
 
 .vcenter {
       display: inline-block;
       vertical-align: middle;
       float: none;
-}
-
-.right {
-      float: right;
-      width: 50%;
-      height: auto;
-      text-align: center;
 }
 
 /* Bootstrap 3 requires custom css to remove row gutters */
@@ -209,23 +205,27 @@ html {
 .portfolio {
       position: relative;
       width: 100%;
-      /* height: 105vh; */
+      /* height: 110vh; */
       background-color: var(--mainColor);
-}
-
-.gallery {
-      /* background-color: #70b6b6; */
-      /* width: 60vw; */
-      /* height: 100vh; */
-      /* float: right; */
-      /* padding-right: 5%; */
-      margin: auto;
+      background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
+      /* background-repeat:repeat; */
+      background-size: 20px 20px;
 }
 
 @media (max-width: 1500px) {
       .gallery {
             width: 70vw;
       }
+}
+
+.gallery {
+      margin: auto;
+}
+
+.galleryimg {
+  margin: auto;
+  /* background-color: transparent; */
+  width: 60vw;
 }
 
 .img-text {
@@ -249,14 +249,6 @@ html {
       color: var(--secondaryColor);
 }
 
-.galleryimg {
-      margin: auto;
-      background-color: transparent;
-      width: 60vw;
-
-
-
-}
 
 .galleryimg img {
       width: 100%;
@@ -267,13 +259,21 @@ html {
       /* padding: 15px 0px; */
 }
 
+.gallery .col-md-4 {
+   background-color: transparent;
+   transition: 0.5s;
+}
+
 .col-md-4:hover img {
       color: var(--mainColor);
       /* opacity: 0; */
       opacity: 0.2;
 }
 
-
+.gallery .col-md-4:hover {
+   background-color: var(--mainColor);
+   opacity: 1;
+}
 
 .col-md-4:hover .img-text {
       opacity: 1;
@@ -331,9 +331,9 @@ html {
 }
 
 .contact {
+      position: relative;
       width: 100%;
-      height: 100vh;
-      clear: both;
+      height: 90vh;
       background-color: var(--secondaryColor);
 }
 
@@ -345,7 +345,6 @@ html {
 }
 
 .rtl {
-      /* fill: var(--secondaryColor); */
       height: 10vh;
       width: 100%;
       position: absolute;
@@ -353,21 +352,51 @@ html {
 
 .launchsvg {
       fill: var(--secondaryColor);
-      bottom: 0;
+      bottom: -10vh;
 }
 
 .portfoliosvg {
-      fill: var(--mainColor);
-      top: -10vh;
+      fill: var(--secondaryColor);
+      /* top: 0; */
 }
 
-.angle {
-      position: relative;
-      height: 300px;
-      width: 200%;
-      right: 50%;
-      top: -15%;
+.divider {
+  height: 10vh;
+}
+.about-portfolio {
+      /* background-color: var(--mainTint); */
       background-color: var(--mainColor);
-      transform: rotate(-8deg);
-      /* z-index: -999; */
+      background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0,0,0,0) 1px);
+      background-repeat:repeat;
+      background-position: 0 -3px;
+      background-size: 20px 20px;
+
+}
+
+.footer {
+   position: absolute;
+   bottom: 0;
+   width: 100vw;
+   height: 200px;
+}
+
+.footer .container {
+   width: 30vw;
+   text-align: center;
+
+}
+
+.container > .instasvg {
+   background-image: url(../svg/ic_instagram.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 30%;
+   height: 55px;
+
+}
+
+.footer .container p {
+   font-family: 'Aleo', serif;
+   font-size: 18px;
+   text-align: center;
 }
