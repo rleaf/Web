@@ -374,7 +374,8 @@ html {
   height: 10vh;
   background: transparent;
   stroke: var(--secondaryColor);
-  stroke-width: 2px;
+  /* stroke-width: 1px; */
+  /* shape-rendering: optimizeQuality; */
 }
 
 .about-portfolio {
