@@ -1,5 +1,5 @@
 :root {
-   --mainRed: #7e1a1a;
+   --mainRed: #a40000;
    --mainRedTint: #ab6262;
    --mainRedShade: #520303;
    --mainBlue: #303063;
@@ -141,8 +141,8 @@ html {
    background-color: var(--mainRed);
    /* background: linear-gradient(var(--mainRedShade), var(--mainRed), var(--mainRedShade)); */
    /* background-repeat:repeat; */
-   background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
-   background-size: 20px 20px;
+   /* background-image: linear-gradient(90deg, rgba(82, 3, 3, 0.5) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(0deg, rgba(82, 3, 3, 0.5) 1px, rgba(0, 0, 0, 0) 1px);
+   background-size: 20px 20px; */
    z-index: -99;
 }
 
@@ -385,7 +385,7 @@ html {
 }
 
 a.contact-anchor:hover {
-   color: var(--mainRedTint);
+   color: var(--mainRedShade);
    transition: 0.5s;
 }
 
