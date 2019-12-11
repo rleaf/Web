@@ -33,3 +33,23 @@ $(document).ready(function() {
       console.log('block');
    });
 });
+
+$(".contact-txt .copy").on("click", function(e) {
+   console.log('weeeeee');
+   e.preventDefault();
+   $(this).find(".email").select();
+   document.execCommand("copy");
+   TweenMax.set($(this).find("span"), {
+      y: 40,
+      autoAlpha: 0
+   });
+   TweenMax.to($(this).find("span"), 2, {
+      ease: reactive,
+      y: 0,
+      autoAlpha: 1
+   });
+   TweenMax.to($(this).find("span"), 2, {
+      autoAlpha: 0,
+      delay: 2
+   });
+});
