@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>threejs</title>
+   <style>
+      * {
+         margin: 0;
+         overflow: hidden;
+         background-color: #000;
+      }
+
+      canvas {
+         width: 100%;
+         height: 100%;
+      }
+
+      p {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         color: #ffffff;
+         z-index: -1;
+         margin: 0;
+         font-size: 200px;
+      }
+   </style>
+   <script src="js/three.js"></script>
+   <script>
+      window.onload = () => {
+         let scene = new THREE.Scene();
+         let camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 1000);
+         let renderer = new THREE.WebGLRenderer();
+
+         renderer.setSize(window.innerWidth, window.innerHeight);
+         document.body.appendChild(renderer.domElement);
+         
+         // material
+         let material = new THREE.MeshBasicMaterial({ color: '#ffffff'});
+         let particleMaterial = new THREE.PointsMaterial({ color: '#ffffff', size: 0.01});
+         let quaternion = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 1, 0), 0.41)
+         
+
+         // geometry
+         let sphereGeometry = new THREE.SphereGeometry(1, 32, 32);
+         let cubeGeometry = new THREE.BoxGeometry(1, 1, 1);
+         let torusGeometry = new THREE.TorusGeometry(1.5, .18, 2, 150);
+         let torusGeometry2 = new THREE.TorusGeometry(3, .21, 2, 100);
+         let torusGeometry3 = new THREE.TorusGeometry(2.25, .19, 2, 200);
+         sphereGeometry.rotateX(0.41);
+         torusGeometry.rotateX(1.9808);
+         torusGeometry2.rotateX(1.9808);
+         torusGeometry3.rotateX(1.9808);
+         
+
+         // lines 
+         let cubeEdges = new THREE.EdgesGeometry(cubeGeometry);
+         let sphereEdges = new THREE.EdgesGeometry(sphereGeometry);
+         
+         // --no 2nd param, defaults
+         let cube = new THREE.Mesh(cubeGeometry);
+         let sphere = new THREE.Mesh(sphereGeometry);
+         // let cubeLine = new THREE.LineSegments(cubeEdges, new THREE.LineBasicMaterial({ color: '#F8B800'}));
+         let sphereLine = new THREE.LineSegments(sphereEdges, new THREE.LineBasicMaterial({ color: '#ffffff'}))     
+         let sphereParticle = new THREE.Points(sphereGeometry, particleMaterial);
+         let torusParticle = new THREE.Points(torusGeometry, particleMaterial);
+         let torusParticle2 = new THREE.Points(torusGeometry2, particleMaterial);
+         let torusParticle3 = new THREE.Points(torusGeometry3, particleMaterial);
+
+         let axis = new THREE.Vector3(0, 1, 0);
+
+         scene.add(cube);
+         // scene.add(cubeLine);
+         // scene.add(sphere);
+         // scene.add(sphereLine);
+         // scene.add(sphereParticle);
+         // scene.add(torusParticle);
+         // scene.add(torusParticle2);
+         // scene.add(torusParticle3);
+
+         camera.position.z = 6;
+
+         function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+            cube.rotation.x += 0.01;
+            cube.rotation.y += 0.01;
+            // cube.rotateOnAxis(axis, 0.01);
+            // line.rotation.x += 0.005;
+            // line.rotation.y += 0.002;
+            // sphere.rotation.y += 0.005;
+            // sphereLine.rotation.y += 0.002;
+            // sphereLine.rotation.x += 0.002;
+            // sphereLine.rotation.z += 0.002;
+            
+            sphereParticle.rotation.y += 0.002;
+            torusParticle.rotation.y += 0.002;
+            torusParticle2.rotation.y += 0.002;
+            torusParticle3.rotation.y += 0.002;
+            // sphereParticle.rotateOnAxis(axis, 0.01);
+            // sphereParticle.rotateOnWorldAxis(axis, 0.01);
+            // sphereParticle.rotateOnAxis += 0.002;
+            // sphereParticle.applyQuaternion(quaternion);
+            // sphereParticle.rotation = new THREE.Euler().setFromQuaternion(quaternion);
+         };
+
+         animate();
+      };
+   </script>
+</head>
+<body>
+   <p>toads</p>
+</body>
+</html>
