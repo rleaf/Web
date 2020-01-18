@@ -5,7 +5,7 @@
 }
 
 :root {
-   --whiteHover: #cecece;
+   --whiteHover: #d3d3d3;
    --white: #fff;
    --black: #000000;
 }
@@ -22,7 +22,14 @@ body, html {
 
 .nav {
    padding-top: 100px;
+   font-size: 18px;
 }
+
+.nav:hover a {
+   color: var(--whiteHover);
+}
+
+
 
 #bar {
    float: left;
@@ -50,13 +57,39 @@ body, html {
    list-style-type: none;
    text-decoration: none;
    display: inline-block;
-   padding: 0 40px 0 40px;
+}
+
+.nav ul a {
+   margin: 0 40px 0 40px;
 }
 
 .nav ul li:hover {
-   color: var(--mainNavHover);
-   text-decoration: underline;
+   color: var(--whiteHover);
    /* add fade transition */
+}
+
+.underline {
+   display: inline;
+   position: relative;
+   overflow: hidden;
+}
+
+.underline::after {
+   content: '';
+   position: absolute;
+   z-index: 1;
+   left: 0;
+   right: 100%;
+   bottom: -5px;
+   background: var(--whiteHover);
+   height: 2px;
+   transition-property: left right;
+   transition-duration: 0.3s;
+   transition-timing-function: ease-out;
+}
+
+.underline:hover::after, .underline.focus::after, .underline:active::after {
+   right: 0;
 }
 
 #portfolio {
