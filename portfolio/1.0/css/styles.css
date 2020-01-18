@@ -5,7 +5,7 @@
 }
 
 :root {
-   --whiteHover: #d3d3d3;
+   --whiteHover: #996666;
    --white: #fff;
    --black: #000000;
 }
@@ -78,18 +78,21 @@ body, html {
    content: '';
    position: absolute;
    z-index: 1;
-   left: 0;
-   right: 100%;
+   right: 0;
+   width: 0;
    bottom: -5px;
    background: var(--whiteHover);
    height: 2px;
    transition-property: left right;
-   transition-duration: 0.3s;
+   transition-duration: 0.5s;
    transition-timing-function: ease-out;
 }
 
-.underline:hover::after, .underline.focus::after, .underline:active::after {
-   right: 0;
+.underline:hover::after, .underline:focus::after, .underline:active::after {
+   left: 0;
+   right: auto;
+   width: 100%;
+   color: var(--whiteHover);
 }
 
 #portfolio {
