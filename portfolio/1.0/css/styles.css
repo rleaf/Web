@@ -10,6 +10,22 @@
    --black: #000000;
 }
 
+::-webkit-scrollbar {
+   width: 10px;
+}
+
+::-webkit-scrollbar-track {
+   /* background: var(--white); */
+}
+
+::-webkit-scrollbar-thumb {
+   background: var(--whiteHover);
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: var(--whiteHover);
+}
+
 body, html {
    margin: 0;
    padding: 0;
