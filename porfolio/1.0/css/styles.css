@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@font-face {
+   font-family: 'jetbrains';
+   src: url('font/jetbrains_reg.ttf');
+}
+
+:root {
+   --whiteHover: #cecece;
+   --white: #fff;
+   --black: #000000;
+}
+
+body, html {
+   margin: 0;
+   padding: 0;
+   background-color: #161616;
+}
+
+#landing {
+   padding: 0 10vh 0 10vh;
+}
+
+.nav {
+   padding-top: 100px;
+}
+
+#bar {
+   float: left;
+   padding: 0;
+   /* padding-left: 200px; Add padding to left side of navbar*/
+}
+
+#bar2 {
+   float: right;
+   padding: 0;
+   /* padding-right: 200px; ??? Add more social links?? */
+}
+
+.barsvg {
+   fill: var(--white);
+   padding: 0;
+   margin: 0;
+   position: relative;
+}
+
+.nav ul li{
+   color: var(--white);
+   font-family: 'Inconsolata', sans-serif;
+   text-transform: uppercase;
+   list-style-type: none;
+   text-decoration: none;
+   display: inline-block;
+   padding: 0 40px 0 40px;
+}
+
+.nav ul li:hover {
+   color: var(--mainNavHover);
+   text-decoration: underline;
+   /* add fade transition */
+}
+
+#portfolio {
+   display: flex;
+   clear:both;
+   padding: 200px 50px 0 50px;
+   justify-content: center;
+   flex-wrap: wrap;
+   /* flex-direction: row; */
+}
+
+#imgcontainer {
+   width: 300px;
+   height: 300px;
+   position: relative;
+}
+
+#imgcontainer a img{
+   width: 100%;
+   height: 100%;
+}
+
+.imagehover {
+   position: absolute;
+   display: inline-block;
+   width: 300px;
+   height: 300px;
+   background-color: var(--black);
+   opacity: 0;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.imagehover:hover {
+   opacity: .7;
+   transition: .1s;
+}
