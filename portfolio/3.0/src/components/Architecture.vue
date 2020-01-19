@@ -3,8 +3,8 @@
     <div class="nav">
       <ul id='bar'>
         <a href="#" class="underline"><li>Curriculum Vitae</li></a>
-        <a href="#" class="underline"><li>Contact</li></a>
-        <!-- <router-link class="underline"><li>Contact</li></router-link> -->
+        <!-- <a href="#" class="underline"><li>Contact</li></a> -->
+        <router-link to='test' class="underline"><li>Contact</li></router-link>
       </ul>
       <ul id='bar2'>
         <a href="#" class="underline"><li>Behance</li></a>
