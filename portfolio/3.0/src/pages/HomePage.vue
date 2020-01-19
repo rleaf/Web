@@ -1,39 +1,24 @@
 <template>
+
   <div id="landing">
-    <div class="nav">
-      <ul id='bar'>
-        <a href="#" class="underline"><li>Curriculum Vitae</li></a>
-        <!-- <a href="#" class="underline"><li>Contact</li></a> -->
-        <router-link to='test' class="underline"><li>Contact</li></router-link>
-      </ul>
-      <ul id='bar2'>
-        <a href="#" class="underline"><li>Behance</li></a>
-        <a href="https://www.instagram.com/ryli.d/" class="underline"><li>Instagram</li></a>
-        <li style="padding-left: 40px">Owl#4626</li>
-        <!-- Get rid of instagram? Not necessary?  -->
-      </ul> 
-    </div>
-
-    <div id="portfolio">
-      
-      <div id="imgcontainer">
-        <a href="">
-        <div class="imagehover">
-          <p>The quick brown fox</p>
-        </div>
-          <img src="../assets/test.jpg" class="portimg">
-        </a>
-      </div>
-
-
-
-    </div>
+     <NavBar />
+     <div id="portfolio">
+        <PortfolioObjects />
+     </div>
   </div>
+
 </template>
 
 <script>
-export default {
+   import NavBar from '../components/NavBar.vue'
+   import PortfolioObjects from '../components/PortfolioObjects.vue'
 
+export default {
+   name: 'landing',
+   components: {
+      NavBar,
+      PortfolioObjects
+   },
 }
 </script>
 
@@ -41,7 +26,7 @@ export default {
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
 :root {
-   --whiteHover: #6baf76;
+   --green: #6baf76;
    --white: #fff;
    --black: #000000;
 }
@@ -55,11 +40,11 @@ export default {
 } */
 
 ::-webkit-scrollbar-thumb {
-   background: var(--whiteHover);
+   background: var(--green);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-   background: var(--whiteHover);
+   background: var(--green);
 }
 
 body, html {
@@ -78,7 +63,7 @@ body, html {
 }
 
 .nav:hover a {
-   color: var(--whiteHover);
+   color: var(--green);
 }
 
 
@@ -116,7 +101,7 @@ body, html {
 }
 
 .nav ul li:hover {
-   color: var(--whiteHover);
+   color: var(--green);
    /* add fade transition */
 }
 
@@ -133,7 +118,7 @@ body, html {
    right: 0;
    width: 0;
    bottom: -20px;
-   background: var(--whiteHover);
+   background: var(--green);
    height: 2px;
    transition-property: left right;
    transition-duration: 0.3s;
@@ -144,7 +129,7 @@ body, html {
    left: 0;
    right: auto;
    width: 100%;
-   color: var(--whiteHover);
+   color: var(--green);
 }
 
 #portfolio {
