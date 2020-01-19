@@ -1,18 +1,22 @@
 <template>
-   <div id="imgcontainer">
-      <a href="">
-         <div class="imagehover">
-            <p @mouseover="mouseOver">The quick brown fox</p>
-         </div>
-         <img src="../assets/test.jpg" class="portimg">
-      </a>
+   <div id="portfolioPreview">
+      <div id="imgcontainer">
+         <a href="">
+            <div @mouseover="cLog" class="imagehover">
+               <p>The quick brown fox</p>
+               <br>
+               <p2>01/04/20</p2>
+            </div>
+            <img src="../assets/test.jpg" class="portimg">
+         </a>
+      </div>
    </div>
 </template>
 
 <script>
 export default {
    methods: {
-      mouseOver: function() {
+      cLog: function() {
          console.log('taods');
       }
    }
@@ -21,6 +25,13 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
+
+#portfolioPreview {
+   display: inherit;
+   flex-wrap: inherit;
+   flex-direction: inherit;
+   justify-content: inherit;
+}
 
 </style>

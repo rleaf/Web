@@ -135,11 +135,11 @@ body, html {
 
 #portfolio {
    display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
    clear:both;
    padding: 200px 50px 0 50px;
    justify-content: center;
-   flex-wrap: wrap;
-   /* flex-direction: row; */
 }
 
 #imgcontainer {
@@ -170,6 +170,14 @@ body, html {
    color: var(--white);
    border-bottom: 1px solid var(--white);
 }
+.imagehover p2 {
+   display: inline-block;
+   font-size: 20px;
+   font-family: 'Inconsolata', sans-serif;
+   margin-top: ;
+   color: var(--white);
+   text-transform: uppercase;
+}
 
 #imgcontainer:hover .imagehover {
    opacity: 1;
@@ -177,7 +185,7 @@ body, html {
 }
 
 #imgcontainer:hover a img {
-   opacity: 0.1;
+   opacity: 0.2;
    transition: 0.1s;
 }
 </style>
