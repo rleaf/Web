@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-    <Architecture />
-    <!-- <WIP /> -->
+    <!-- <HomePage /> -->
+    <!-- <TestPage /> -->
+    <router-view />
   </div>
 </template>
 
 <script>
-import Architecture from './components/Architecture.vue'
-// import WIP from './components/Wip.vue'
+// import HomePage from './pages/HomePage.vue'
+// import TestPage from './pages/TestPage.vue'
+// import WIP from './pages/Wip.vue'
 
 export default {
   name: 'app',
   components: {
-    Architecture,
+    // HomePage,
+    // TestPage,
     // WIP
   }
 }
