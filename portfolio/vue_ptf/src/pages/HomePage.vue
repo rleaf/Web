@@ -13,13 +13,14 @@
    import NavBar from '../components/NavBar.vue'
    import PortfolioObjects from '../components/PortfolioObjects.vue'
 
-export default {
-   name: 'landing',
-   components: {
-      NavBar,
-      PortfolioObjects
-   },
-}
+   export default {
+      name: 'landing',
+      components: {
+         NavBar,
+         PortfolioObjects
+      },
+   }
+
 </script>
 
 <style>
@@ -150,7 +151,6 @@ body, html {
 #imgcontainer a img{
    width: 100%;
    height: 100%;
-   opacity: 1;
 }
 
 .imagehover {
@@ -159,12 +159,16 @@ body, html {
    width: 300px;
    height: 300px;
    opacity: 0;
+   text-align: center;
 }
 
 .imagehover p {
+   display: inline-block;
+   font-size: 20px;
    font-family: 'Inconsolata', sans-serif;
-   text-align: center;
+   margin-top: 50px;
    color: var(--white);
+   border-bottom: 1px solid var(--white);
 }
 
 #imgcontainer:hover .imagehover {

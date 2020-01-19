@@ -2,7 +2,7 @@
    <div id="imgcontainer">
       <a href="">
          <div class="imagehover">
-            <p>The quick brown fox</p>
+            <p @mouseover="mouseOver">The quick brown fox</p>
          </div>
          <img src="../assets/test.jpg" class="portimg">
       </a>
@@ -11,8 +11,14 @@
 
 <script>
 export default {
+   methods: {
+      mouseOver: function() {
+         console.log('taods');
+      }
+   }
 
 }
+
 </script>
 
 <style>
