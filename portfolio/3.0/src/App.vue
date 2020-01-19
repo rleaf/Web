@@ -1,20 +1,19 @@
 <template>
   <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <Architecture />
-    <WIP />
+    <!-- <WIP /> -->
   </div>
 </template>
 
 <script>
-// import Architecture from './components/Architecture.vue'
-import WIP from './components/Wip.vue'
+import Architecture from './components/Architecture.vue'
+// import WIP from './components/Wip.vue'
 
 export default {
   name: 'app',
   components: {
-    // Architecture,
-    WIP
+    Architecture,
+    // WIP
   }
 }
 </script>
