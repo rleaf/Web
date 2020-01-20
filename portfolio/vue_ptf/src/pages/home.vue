@@ -148,7 +148,7 @@ body, html {
    position: relative;
 }
 
-#imgcontainer a img{
+#imgrouter img{
    width: 100%;
    height: 100%;
 }
@@ -162,20 +162,24 @@ body, html {
    text-align: center;
 }
 
-.imagehover p {
+.imagehover > p {
    display: inline-block;
    font-size: 20px;
    font-family: 'Inconsolata', sans-serif;
-   margin-top: 50px;
+   margin-top: 45px;
    color: var(--white);
    border-bottom: 1px solid var(--white);
+   text-transform: uppercase;
 }
-.imagehover p2 {
+
+#covertext > p {
    display: inline-block;
    font-size: 20px;
    font-family: 'Inconsolata', sans-serif;
    color: var(--white);
+   margin-top: 30px;
    text-transform: uppercase;
+
 }
 
 #imgcontainer:hover .imagehover {
@@ -183,7 +187,7 @@ body, html {
    transition: 0.1s;
 }
 
-#imgcontainer:hover a img {
+#imgrouter:hover img {
    opacity: 0.2;
    transition: 0.1s;
 }

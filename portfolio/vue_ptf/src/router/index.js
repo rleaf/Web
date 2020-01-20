@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomePage from '../pages/landing.vue'
+import HomePage from '../pages/home.vue'
 import TestPage from '../pages/testing.vue'
 import CurriculumVitae from '../pages/curriculum.vue'
+import TestObject from '../pages/portfolioobject.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/curriculumvitae',
     name: 'curriculumvitae',
     component: CurriculumVitae
+  },
+  {
+    path: '/testobject',
+    name: 'testobject',
+    component: TestObject
   }
             // {
             //   path: '/about',
