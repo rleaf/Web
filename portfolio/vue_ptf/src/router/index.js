@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomePage from '../pages/HomePage.vue'
-import TestPage from '../pages/TestPage.vue'
-import CurriculumVitae from '../pages/CurriculumVitae.vue'
+import HomePage from '../pages/landing.vue'
+import TestPage from '../pages/testing.vue'
+import CurriculumVitae from '../pages/curriculum.vue'
 
 Vue.use(VueRouter)
 

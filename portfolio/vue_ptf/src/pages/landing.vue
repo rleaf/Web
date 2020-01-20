@@ -10,8 +10,8 @@
 </template>
 
 <script>
-   import NavBar from '../components/NavBar.vue'
-   import PortfolioObjects from '../components/PortfolioObjects.vue'
+   import NavBar from '../components/nav.vue'
+   import PortfolioObjects from '../components/portfolio.vue'
 
    export default {
       name: 'landing',
@@ -136,7 +136,7 @@ body, html {
 #portfolio {
    display: flex;
    flex-wrap: wrap;
-   flex-direction: row;
+   /* flex-direction: row; */
    clear:both;
    padding: 200px 50px 0 50px;
    justify-content: center;
@@ -174,7 +174,6 @@ body, html {
    display: inline-block;
    font-size: 20px;
    font-family: 'Inconsolata', sans-serif;
-   margin-top: ;
    color: var(--white);
    text-transform: uppercase;
 }
