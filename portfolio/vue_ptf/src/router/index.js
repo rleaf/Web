@@ -3,7 +3,8 @@ import VueRouter from 'vue-router'
 import HomePage from '../pages/home.vue'
 import TestPage from '../pages/testing.vue'
 import CurriculumVitae from '../pages/curriculum.vue'
-import TestObject from '../pages/portfolioobject.vue'
+import PortfolioTest from '../pages/portfolioObjects/portfolioObject.vue'
+import expanseLink from '../pages/portfolioObjects/expanseObject.vue'
 
 Vue.use(VueRouter)
 
@@ -19,14 +20,19 @@ const routes = [
     component: TestPage
   },
   {
-    path: '/curriculumvitae',
+    path: '/cv',
     name: 'curriculumvitae',
     component: CurriculumVitae
   },
   {
-    path: '/testobject',
-    name: 'testobject',
-    component: TestObject
+    path: '/PortfolioTest',
+    name: 'PortfolioTest',
+    component: PortfolioTest
+  },
+  {
+    path: '/expanse',
+    name: 'expanse',
+    component: expanseLink
   }
             // {
             //   path: '/about',

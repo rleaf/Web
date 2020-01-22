@@ -1,7 +1,10 @@
 <template>
    <div class="nav">
       <ul id='bar'>
-         <router-link to="curriculumvitae" class="underline">
+         <router-link to="/" class="underline">
+            <li>Home</li>
+         </router-link>
+         <router-link to="cv" class="underline">
             <li>Curriculum Vitae</li>
          </router-link>
          <!-- <a href="#" class="underline"><li>Contact</li></a> -->

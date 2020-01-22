@@ -11,10 +11,10 @@
 
 <script>
    import NavBar from '../components/nav.vue'
-   import PortfolioObjects from '../components/portfolio.vue'
+   import PortfolioObjects from '../components/portfolioSkeleton.vue'
 
    export default {
-      name: 'landing',
+      name: 'home',
       components: {
          NavBar,
          PortfolioObjects
@@ -25,11 +25,15 @@
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
 
 :root {
    --green: #6baf76;
    --white: #fff;
    --black: #000000;
+   --offWhite: #cacaca;
 }
 
 ::-webkit-scrollbar {
@@ -149,8 +153,8 @@ body, html {
 }
 
 #imgrouter img{
-   width: 100%;
-   height: 100%;
+   width: 300px;
+   height: 300px;
 }
 
 .imagehover {
@@ -191,4 +195,48 @@ body, html {
    opacity: 0.2;
    transition: 0.1s;
 }
+
+#centerContainer {
+   clear: both;
+   font-family: 'Lora', serif;
+   text-align: center;
+}
+
+#centerContainer > img {
+   width: 800px;
+   /* height: 500px; */
+   padding: 45px 0;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
+@media (max-width: 940px) {
+   #centerContainer > img {
+      width: 60vw;
+      height: 60vw;
+   }
+}
+
+#textContainerHeader {
+   font-size: 40px;
+   font-family: 'Inconsolata';
+   color: var(--white);
+   text-transform: uppercase;
+   padding-top: 150px;
+   padding-bottom: 75px;
+}
+
+#textContainerBody {
+   padding: 25px 10vw;
+   color: var(--offWhite);
+   font-family: 'Lora', serif;
+   font-size: 16px;
+   /* font-weight: 300; */
+   line-height: 140%;
+}
+
 </style>
+
