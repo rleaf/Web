@@ -1,14 +1,16 @@
 <template>
    <div id="imgcontainer">
       <router-link id="imgrouter" to="/expanse">
-         <div @mouseover="cLog" class="imagehover">
+         <div class="imagehover">
             <p>expanse</p>
-            <br>
+            <div id="subtext">
+               <p>font</p>
+            </div>
             <div id="covertext">
                <p>01/04/20</p>
             </div>
          </div>
-         <img src="../../assets/expanse_cover.png" class="portimg">
+         <img src="../../assets/expanse/expanse_cover.png" class="portimg">
       </router-link>
    </div>
 </template>

@@ -4,15 +4,17 @@
       <div id="centerContainer">
          <div id="textContainerHeader">
             Expanse
+            <div id="subHeader">
+               Font
+            </div>         
          </div>
          <div id="textContainerBody">
             Expanse is a header typeface designed with tech and sci-fi aesthetics. 
          </div>
-         <!-- <img src="../../assets/Untitled-2.jpg" alt=""> -->
-         <img src="../../assets/expanse_sample.png" alt="" id="expanseSample">
+         <img src="../../assets/expanse/expanse_sample.png" alt="" id="img1300">
          <br>
-         <img src="../../assets/expanse_fill.png" alt="" id="expanseFill">
-         <img src="../../assets/expanse_stroke.png" alt="" id="expanseFill">
+         <img src="../../assets/expanse/expanse_fill.png" alt="" id="img500">
+         <img src="../../assets/expanse/expanse_stroke.png" alt="" id="img500">
          <div id="textContainerBody">
 
          </div>        
@@ -32,19 +34,6 @@ export default {
 
 <style scoped>
 
-#expanseSample {
-   width: 1300px;
-}
 
-@media (max-width: 1420px) {
-   #expanseSample {
-      width: 80vw;
-   }
-}
-
-#expanseFill {
-   width: 400px;
-   padding: 25px 50px;
-}
 
 </style>

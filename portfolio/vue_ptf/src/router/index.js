@@ -6,6 +6,8 @@ import CurriculumVitae from '../pages/curriculum.vue'
 import portfolioLink from '../pages/portfolioObjects/portfolioObject.vue'
 import expanseLink from '../pages/portfolioObjects/expanseObject.vue'
 import tubeLink from '../pages/portfolioObjects/tubeObject.vue'
+import barnegatLink from '../pages/portfolioObjects/barnegatObject.vue'
+import dropboxLink from '../pages/portfolioObjects/dropboxObject.vue'
 
 Vue.use(VueRouter)
 
@@ -39,6 +41,16 @@ const routes = [
     path: '/tube',
     name: 'tube',
     component: tubeLink
+  },
+  {
+    path: '/barnegat',
+    name: 'barnegat',
+    component: barnegatLink
+  },
+  {
+    path: '/dropbox',
+    name: 'dropbox',
+    component: dropboxLink
   }
             // {
             //   path: '/about',

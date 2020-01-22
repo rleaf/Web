@@ -3,7 +3,9 @@
       <router-link id="imgrouter" to="/portfoliotest">
          <div @mouseover="cLog" class="imagehover">
             <p>The quick brown fox</p>
-            <br>
+            <div id="subtext">
+               <p>fox</p>
+            </div>
             <div id="covertext">
                <p>01/04/20</p>
             </div>
@@ -15,7 +17,12 @@
 
 <script>
 export default {
-
+   methods: {
+      cLog: function() {
+         console.log('toads');
+         
+      }
+   }
 }
 </script>
 

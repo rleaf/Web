@@ -171,8 +171,16 @@ body, html {
    font-size: 20px;
    font-family: 'Inconsolata', sans-serif;
    margin-top: 45px;
+   margin-bottom: 0;
    color: var(--white);
    border-bottom: 1px solid var(--white);
+   text-transform: uppercase;
+}
+
+#subtext > p {
+   font-size: 16px;
+   font-family: 'Inconsolata', sans-serif;
+   color: var(--white);
    text-transform: uppercase;
 }
 
@@ -204,7 +212,6 @@ body, html {
 
 #centerContainer > img {
    width: 800px;
-   /* height: 500px; */
    padding: 45px 0;
    user-select: none;
    -moz-user-select: none;
@@ -213,12 +220,30 @@ body, html {
    -ms-user-select: none;
 }
 
-/* @media (max-width: 940px) {
-   #centerContainer > img {
-      width: 60vw;
-      height: 60vw;
+#img1600 {
+   width: 1600px !important;
+}
+
+@media (max-width: 1720px) {
+   #img1600 {
+     width: 80vw !important;
    }
-} */
+}
+
+#img1300 {
+   width: 1300px !important;
+}
+
+@media (max-width: 1420px) {
+   #img1300 {
+      width: 80vw !important;
+   }
+}
+
+#img500 {
+   width: 500px !important;
+   padding: 25px 50px !important;
+}
 
 #textContainerHeader {
    font-size: 40px;
@@ -227,6 +252,11 @@ body, html {
    text-transform: uppercase;
    padding-top: 150px;
    padding-bottom: 75px;
+}
+
+#subHeader {
+   font-size: 22px;
+   padding-top: 20px;
 }
 
 #textContainerBody {

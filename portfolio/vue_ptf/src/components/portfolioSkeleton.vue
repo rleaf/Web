@@ -1,23 +1,25 @@
 <template>
    <div id="portfolioSkeletonFlex">
-      <portfolioPreview />
       <expanse />
       <tubeWorld />
-
+      <barnegatLight />
+      <dropbox />
    </div>
 </template>
 
 <script>
-import portfolioPreview from './portfolioPreview/portfolioPreview.vue'
 import expanse from './portfolioPreview/expansePreview.vue'
 import tubeWorld from './portfolioPreview/tubePreview.vue'
+import barnegatLight from './portfolioPreview/barnegatPreview.vue'
+import dropbox from './portfolioPreview/dropboxPreview.vue'
 
 
 export default {
    components: {
-      portfolioPreview,
       expanse,
-      tubeWorld
+      tubeWorld,
+      barnegatLight,
+      dropbox
 
    },
 
