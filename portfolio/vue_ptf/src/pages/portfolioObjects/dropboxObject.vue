@@ -11,11 +11,10 @@
          <div id="textContainerBody">
             This was a project in my web design class where we were simply asked to redesign a site.
          </div>
-         <div id="testvid">
-            <video width="1300px" autoplay loop src="../../assets/dropbox/test.webm"></video>
-            <!-- <video width="1300px" autoplay loop controls :src="video"></video> -->
-         </div>
          <img src="../../assets/dropbox/dropbox.jpg" alt="" id="img1300">
+            <!-- <video id="img1300" autoplay loop src="../../assets/dropbox/test.webm"></video> -->
+            <video id="img1300" autoplay loop :src="landing"></video>
+            <video id="img1300" autoplay loop :src="signin"></video>
          <div id="textContainerBody">
             
          </div>        
@@ -33,9 +32,10 @@ export default {
    },
    data: function() {
       return {
-         video: "../../assets/dropbox/test.webm",
+         landing: require("../../assets/dropbox/test.webm"),
+         signin: require("../../assets/dropbox/signin.webm")
       }
-   }
+   },
 }
 </script>
 
