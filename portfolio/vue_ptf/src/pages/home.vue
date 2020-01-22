@@ -213,12 +213,12 @@ body, html {
    -ms-user-select: none;
 }
 
-@media (max-width: 940px) {
+/* @media (max-width: 940px) {
    #centerContainer > img {
       width: 60vw;
       height: 60vw;
    }
-}
+} */
 
 #textContainerHeader {
    font-size: 40px;
