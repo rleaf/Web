@@ -9,7 +9,7 @@
             </div>
          </div>
          <div id="textContainerBody">
-            A small project assigned in class where we were asked to create a surreal image
+            A small project attempting to create a surreal photomanipulation
          </div>
          <img src="../../assets/tube/tubeworld_glass.jpg" alt="" id="img1300">
          <img src="../../assets/tube/tubeworld_noglass.jpg" alt="" id="img1300">

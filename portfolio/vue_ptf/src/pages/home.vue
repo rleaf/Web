@@ -210,7 +210,7 @@ body, html {
    text-align: center;
 }
 
-#centerContainer > img {
+#centerContainer > img, #centerContainer > video {
    width: 800px;
    padding: 45px 0;
    user-select: none;
@@ -267,6 +267,26 @@ body, html {
    /* font-weight: 300; */
    line-height: 140%;
 }
+
+#curriculumStructure {
+   display: block;
+   /* flex-wrap: wrap; */
+}
+
+#curriculumHeader {
+   font-family: 'Inconsolata', sans-serif;
+   text-transform: uppercase;
+}
+
+#curriculumBody {
+   display: inherit;
+   font-family: 'Lora', serif;
+   color: var(--offWhite);
+   font-size: 16px;
+   line-height: 140%;
+   width: 500px;
+   padding: 25px 5vw;
+} 
 
 </style>
 

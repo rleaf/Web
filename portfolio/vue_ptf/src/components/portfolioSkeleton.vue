@@ -1,8 +1,9 @@
 <template>
    <div id="portfolioSkeletonFlex">
+      <valiant />
       <expanse />
-      <tubeWorld />
       <barnegatLight />
+      <tubeWorld />
       <dropbox />
    </div>
 </template>
@@ -12,6 +13,7 @@ import expanse from './portfolioPreview/expansePreview.vue'
 import tubeWorld from './portfolioPreview/tubePreview.vue'
 import barnegatLight from './portfolioPreview/barnegatPreview.vue'
 import dropbox from './portfolioPreview/dropboxPreview.vue'
+import valiant from './portfolioPreview/valiantPreview.vue'
 
 
 export default {
@@ -19,7 +21,8 @@ export default {
       expanse,
       tubeWorld,
       barnegatLight,
-      dropbox
+      dropbox,
+      valiant
 
    },
 

@@ -4,7 +4,7 @@
          <div class="imagehover">
             <p>tube world</p>
             <div id="subtext">
-               <p>photomanipulation</p>
+               <p>photo manipulation</p>
             </div>
             <div id="covertext">
                <p>01/04/20</p>

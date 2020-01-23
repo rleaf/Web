@@ -5,7 +5,7 @@
             <li>Home</li>
          </router-link>
          <router-link to="cv" class="underline">
-            <li>Curriculum Vitae</li>
+            <li>About / Curriculum Vitae</li>
          </router-link>
          <!-- <a href="#" class="underline"><li>Contact</li></a> -->
          <router-link to='test' class="underline">
@@ -13,10 +13,10 @@
          </router-link>
       </ul>
       <ul id='bar2'>
-         <a href="https://www.behance.net/ryli" class="underline">
+         <a href="https://www.behance.net/ryli" class="underline" target="_blank">
             <li>Behance</li>
          </a>
-         <a href="https://www.instagram.com/ryli.d/" class="underline">
+         <a href="https://www.instagram.com/ryli.d/" class="underline" target="_blank">
             <li>Instagram</li>
          </a>
          <li style="padding-left: 40px">Owl#4626</li>

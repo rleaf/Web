@@ -8,6 +8,8 @@ import expanseLink from '../pages/portfolioObjects/expanseObject.vue'
 import tubeLink from '../pages/portfolioObjects/tubeObject.vue'
 import barnegatLink from '../pages/portfolioObjects/barnegatObject.vue'
 import dropboxLink from '../pages/portfolioObjects/dropboxObject.vue'
+import valiantLink from '../pages/portfolioObjects/valiantObject.vue'
+
 
 Vue.use(VueRouter)
 
@@ -51,7 +53,13 @@ const routes = [
     path: '/dropbox',
     name: 'dropbox',
     component: dropboxLink
-  }
+  },
+  {
+    path: '/valiant',
+    name: 'valiant',
+    component: valiantLink
+  },
+  
             // {
             //   path: '/about',
             //   name: 'about',

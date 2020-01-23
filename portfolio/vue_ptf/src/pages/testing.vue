@@ -1,7 +1,7 @@
 <template>
   <div id="landing">
     <NavBar />
-    <h1>This is a test page</h1>
+    <h1>This page is still being built <br><br> :)</h1>
   </div>
 </template>
 
