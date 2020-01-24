@@ -3,17 +3,20 @@
      <NavBar/>
       <div id="centerContainer">
          <div id="textContainerHeader">
-            moshi moshi
+            Valiant
             <div id="subHeader">
-               Photography
+               Branding / Logo & Web Design / Dev
             </div>
          </div>
-         <div id="textContainerBody">
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+         <div id="textContainerBody" style="padding-bottom: 100px;">
+            {{valiantOpen}}
+            <construction />
          </div>
-         <img src="../../assets/test.jpg" alt="">
          <div id="textContainerBody">
-            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+         </div>
+         <!-- <img src="../../assets/valiant/logo_red.png" alt="">
+         <img src="../../assets/valiant/logo_white.png" alt=""> -->
+         <div id="textContainerBody">
          </div>        
       </div>
   </div>
@@ -21,11 +24,18 @@
 
 <script>
 import NavBar from '../../components/nav.vue'
+import construction from '../../components/construction.vue'
 
 export default {
    name: 'portfolioObject',
    components: {
-      NavBar
+      NavBar,
+      construction,
+   },
+   data: function() {
+      return {
+         valiantOpen: 'Valiant is a custom furniture design business that compounds the functionality and aesthetics of both metal and word working. The client requested a brand identity, logo design, and multimedia channels to convey his business.'
+      }
    }
 }
 </script>

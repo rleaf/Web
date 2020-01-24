@@ -7,7 +7,7 @@
                <p>font</p>
             </div>
             <div id="covertext">
-               <p>01/04/20</p>
+               <p>11/9/2019</p>
             </div>
          </div>
          <img src="../../assets/expanse/expanse_cover.png" class="portimg">

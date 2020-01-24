@@ -8,8 +8,11 @@
             <li>About / Curriculum Vitae</li>
          </router-link>
          <!-- <a href="#" class="underline"><li>Contact</li></a> -->
-         <router-link to='test' class="underline">
+         <router-link to='contact' class="underline">
             <li>Contact</li>
+         </router-link>
+         <router-link to='sketches' class="underline">
+            <li>Sketches +</li>
          </router-link>
       </ul>
       <ul id='bar2'>

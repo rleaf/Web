@@ -7,7 +7,7 @@
                <p>photography</p>
             </div>
             <div id="covertext">
-               <p>01/04/20</p>
+               <p>01/20/19</p>
             </div>
          </div>
          <img src="../../assets/barnegat/barnegat_cover.jpg" class="portimg">

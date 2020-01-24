@@ -9,10 +9,8 @@
                <div id="curriculumHeader">
                   <u style="font-size: 18px;">About</u>
                </div>
-               <p>Hello my name is Ryan Lin. This site is intended to provide a synopsis of what I enjoy doing and who I am.
-                  Amongst what is already mentioned below, I also enjoy
-                  <a href='https://www.youtube.com/channel/UCe8X-Ib4hEc7keoBQ7cMdmA' target='_blank' style="color: var(--green);">power / olympic lifting</a>,
-                  <a href='https://www.instagram.com/ryli.d/' target='_blank' style="color: var(--green);">eating / cooking</a>, and playing games.
+               <p>
+                  <curriculumAbout/>
                </p>
             </div>
          </div>
@@ -23,7 +21,7 @@
                   <u style="font-size: 18px;">Background & Skills</u>
                </div>
                <div  style="padding-bottom: 0;">
-               <i style="padding-left: 0px;">* Full CV available upon request</i>
+               <i style="color: var(--green);">* Full CV available upon request</i>
                </div>
 
                <ul style="list-style-type: square; margin-bottom: 100px;">
@@ -53,12 +51,14 @@
 
 <script>
 import NavBar from '../components/nav.vue'
+import curriculumAbout from '../components/curriculumAbout.vue'
 
 export default {
    name: 'curriculum',
    components: {
-      NavBar
-   }
+      NavBar,
+      curriculumAbout
+   },
 }
 </script>
 

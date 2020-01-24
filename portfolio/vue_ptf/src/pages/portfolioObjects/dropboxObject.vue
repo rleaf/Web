@@ -9,7 +9,7 @@
             </div>
          </div>
          <div id="textContainerBody">
-            A simple redesign intended to convey a cleaner aesthetic
+            A redesign intended to convey a simple and cleaner aesthetic
          </div>
          <img src="../../assets/dropbox/dropbox.jpg" alt="" id="img1300">
          <!-- <video id="img1300" autoplay loop src="../../assets/dropbox/test.webm"></video> -->

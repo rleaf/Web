@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
    @import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 
    * {

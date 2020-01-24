@@ -1,20 +1,19 @@
 <template>
   <div id="landing">
-    <NavBar />
     <h1>This page is still being built <br><br> :)</h1>
+    <h2>Updated {{date}}</h2>
   </div>
 </template>
 
 <script>
-import NavBar from '../components/nav.vue'
-
-
-console.log('test');
-
 
 export default {
   components: {
-    NavBar
+    },
+    data: function() {
+      return {
+        date: '1/23/20'
+      }
   }
 }
 </script>
@@ -28,6 +27,17 @@ h1 {
   font-family: 'Inconsolata', sans-serif;
   font-weight: 200;
   color: var(--white);
+}
+
+h2 {
+  clear: both;
+  text-align: center;
+  font-family: 'Inconsolata', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  color: var(--white);
+  font-style: italic;
+  padding-top: 25px;
 }
 
 </style>

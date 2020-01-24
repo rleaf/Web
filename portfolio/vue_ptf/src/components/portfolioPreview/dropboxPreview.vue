@@ -7,7 +7,7 @@
                <p>Web Design / Dev</p>
             </div>
             <div id="covertext">
-               <p>01/04/20</p>
+               <p>10/5/2018</p>
             </div>
          </div>
          <img src="../../assets/dropbox/dropbox_cover.jpg" class="portimg">

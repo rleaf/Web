@@ -31,6 +31,7 @@
 
 :root {
    --green: #6baf76;
+   --lightGreen: #95e7a6;
    --white: #fff;
    --black: #000000;
    --offWhite: #cacaca;

@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomePage from '../pages/home.vue'
-import TestPage from '../pages/testing.vue'
 import CurriculumVitae from '../pages/curriculum.vue'
+import contact from '../pages/contact.vue'
+import sketches from '../pages/sketches.vue'
 import portfolioLink from '../pages/portfolioObjects/portfolioObject.vue'
 import expanseLink from '../pages/portfolioObjects/expanseObject.vue'
 import tubeLink from '../pages/portfolioObjects/tubeObject.vue'
@@ -20,14 +21,19 @@ const routes = [
     component: HomePage
   },
   {
-    path: '/test',
-    name: 'test',
-    component: TestPage
-  },
-  {
     path: '/cv',
     name: 'curriculumvitae',
     component: CurriculumVitae
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: contact
+  },
+  {
+    path: '/sketches',
+    name: 'sketches',
+    component: sketches
   },
   {
     path: '/PortfolioTest',
