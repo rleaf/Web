@@ -7,10 +7,10 @@
                <p>font</p>
             </div>
             <div id="covertext">
-               <p>11/9/2019</p>
+               <p>10/9/2019</p>
             </div>
          </div>
-         <img src="../../assets/expanse/expanse_cover.png" class="portimg">
+         <img src="../../assets/expanse/expansePreview.png" class="portimg">
       </router-link>
    </div>
 </template>

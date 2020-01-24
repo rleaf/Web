@@ -1,6 +1,7 @@
 <template>
    <div id="portfolioSkeletonFlex">
       <valiant />
+      <spotify />
       <expanse />
       <barnegatLight />
       <tubeWorld />
@@ -14,6 +15,7 @@ import tubeWorld from './portfolioPreview/tubePreview.vue'
 import barnegatLight from './portfolioPreview/barnegatPreview.vue'
 import dropbox from './portfolioPreview/dropboxPreview.vue'
 import valiant from './portfolioPreview/valiantPreview.vue'
+import spotify from './portfolioPreview/spotifyPreview.vue'
 
 
 export default {
@@ -22,7 +24,8 @@ export default {
       tubeWorld,
       barnegatLight,
       dropbox,
-      valiant
+      valiant,
+      spotify
 
    },
 

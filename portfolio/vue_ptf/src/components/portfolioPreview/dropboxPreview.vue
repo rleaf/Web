@@ -10,7 +10,7 @@
                <p>10/5/2018</p>
             </div>
          </div>
-         <img src="../../assets/dropbox/dropbox_cover.jpg" class="portimg">
+         <img src="../../assets/dropbox/dropboxPreview.png" class="portimg">
       </router-link>
    </div>
 </template>

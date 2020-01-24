@@ -10,19 +10,13 @@
                </div>
                   <p>
                      Sketches / Designs / Projects that are not complete. These were just for practice
-                     and learning new concepts. 
+                     and learning new things. 
                   </p>
             </div>
          </div>
          <div id="sketchesSkeletonFlex">
             <img src="../assets/sketches/eye.jpg" alt="" id="img350">
-            <!-- <img src="../assets/sketches/interstellar.jpg" alt="" id="img350"> -->
-            <!-- <img src="../assets/sketches/cd.png" alt="" id="img350"> -->
             <img src="../assets/sketches/gold.jpg" alt="" id="img350">
-            <!-- <img src="../assets/sketches/circles.jpg" alt="" id="img350"> -->
-            <!-- <img src="../assets/sketches/nikon.jpg" alt="" id="img350"> -->
-            <!-- <img src="../assets/sketches/moodboard.jpg" alt="" id="img500nopad"> -->
-            <!-- <img src="../assets/sketches/penrose.jpg" alt="" id="img500nopad"> -->
          </div>
    </div>
 </template>

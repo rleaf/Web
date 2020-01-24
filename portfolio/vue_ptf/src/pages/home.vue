@@ -156,6 +156,11 @@ body, html {
 #imgrouter img{
    width: 300px;
    height: 300px;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 }
 
 .imagehover {
@@ -223,6 +228,11 @@ body, html {
 
 #img1600 {
    width: 1600px !important;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 }
 
 @media (max-width: 1720px) {
@@ -233,6 +243,11 @@ body, html {
 
 #img1300 {
    width: 1300px !important;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 }
 
 @media (max-width: 1420px) {
@@ -244,13 +259,28 @@ body, html {
 #img500 {
    width: 500px !important;
    padding: 25px 50px !important;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 }
 #img500nopad {
    width: 500px !important;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 }
 
 #img350 {
    width: 350px !important;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
 
 }
 

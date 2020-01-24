@@ -10,6 +10,7 @@ import tubeLink from '../pages/portfolioObjects/tubeObject.vue'
 import barnegatLink from '../pages/portfolioObjects/barnegatObject.vue'
 import dropboxLink from '../pages/portfolioObjects/dropboxObject.vue'
 import valiantLink from '../pages/portfolioObjects/valiantObject.vue'
+import spotifyLink from '../pages/portfolioObjects/spotifyObject.vue'
 
 
 Vue.use(VueRouter)
@@ -64,6 +65,11 @@ const routes = [
     path: '/valiant',
     name: 'valiant',
     component: valiantLink
+  },
+  {
+    path: '/spotify',
+    name: 'spotify',
+    component: spotifyLink
   },
   
             // {
