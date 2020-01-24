@@ -246,6 +246,11 @@ body, html {
    padding: 25px 50px !important;
 }
 
+#img350 {
+   width: 350px !important;
+
+}
+
 #textContainerHeader {
    font-size: 40px;
    font-family: 'Inconsolata';

@@ -9,13 +9,14 @@
                   <u style="font-size: 18px;">What's this?</u>
                </div>
                   <p>
-                     Everything and anything completed or not,
-                     that I feel does not warrant it's own page but is worth a mention 
-                     will be put here.
+                     Sketches and other random works for practice
                   </p>
             </div>
          </div>
-
+         <div id="portfolioSkeletonFlex">
+            <img src="../assets/sketches/gold.jpg" alt="" id="img350">
+            <img src="../assets/sketches/eye.jpg" alt="" id="img350">
+         </div>
    </div>
 </template>
 
