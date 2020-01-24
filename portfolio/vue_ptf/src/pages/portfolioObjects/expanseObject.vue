@@ -19,6 +19,7 @@
          <img src="../../assets/expanse/expanse_fill.png" alt="" id="img500">
          <img src="../../assets/expanse/expanse_stroke.png" alt="" id="img500">
          <img src="../../assets/expanse/space.jpg" alt="" id="img1300">
+         <img src="../../assets/expanse/lamborghini.jpg" alt="">
          <br>
          <div id="textContainerBody">
 

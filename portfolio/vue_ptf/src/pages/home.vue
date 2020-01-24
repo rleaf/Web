@@ -245,6 +245,9 @@ body, html {
    width: 500px !important;
    padding: 25px 50px !important;
 }
+#img500nopad {
+   width: 500px !important;
+}
 
 #img350 {
    width: 350px !important;

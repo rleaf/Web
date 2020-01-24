@@ -6,16 +6,23 @@
          <div id="curriculumStructure">
             <div id="curriculumBody">
                <div id="curriculumHeader">
-                  <u style="font-size: 18px;">What's this?</u>
+                  <i style="font-size: 18px;">---</i>
                </div>
                   <p>
-                     Sketches and other random works for practice
+                     Sketches / Designs / Projects that are not complete. These were just for practice
+                     and learning new concepts. 
                   </p>
             </div>
          </div>
-         <div id="portfolioSkeletonFlex">
-            <img src="../assets/sketches/gold.jpg" alt="" id="img350">
+         <div id="sketchesSkeletonFlex">
             <img src="../assets/sketches/eye.jpg" alt="" id="img350">
+            <!-- <img src="../assets/sketches/interstellar.jpg" alt="" id="img350"> -->
+            <!-- <img src="../assets/sketches/cd.png" alt="" id="img350"> -->
+            <img src="../assets/sketches/gold.jpg" alt="" id="img350">
+            <!-- <img src="../assets/sketches/circles.jpg" alt="" id="img350"> -->
+            <!-- <img src="../assets/sketches/nikon.jpg" alt="" id="img350"> -->
+            <!-- <img src="../assets/sketches/moodboard.jpg" alt="" id="img500nopad"> -->
+            <!-- <img src="../assets/sketches/penrose.jpg" alt="" id="img500nopad"> -->
          </div>
    </div>
 </template>
@@ -31,5 +38,11 @@ export default {
 </script>
 
 <style scoped>
+
+#sketchesSkeletonFlex {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start !important;
+}
 
 </style>

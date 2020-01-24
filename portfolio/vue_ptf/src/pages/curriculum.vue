@@ -26,12 +26,14 @@
 
                <ul style="list-style-type: square; margin-bottom: 100px;">
                   <li>Bachelor of Arts in Graphic Design & Minor in Web Design</li>
+                  <li>Media Design / Branding / Logo / Print Production</li>
+                  <li>Workbook & Relational Database Organization & Visualization</li>
                   <li>Languages & Software</li>
                   <ul style="list-style-type: none;">
-                     <li><i>HTML & CSS</i></li>
-                     <li><i>JavaScript</i></li>
                      <li><i>Adobe CC</i></li>
                      <li><i>MS Office</i></li>
+                     <li><i>HTML & CSS</i></li>
+                     <li><i>JavaScript</i></li>
                   </ul>
                   <li>Photography</li>
                   <ul style="list-style-type: none;">
@@ -39,8 +41,6 @@
                      <li><i>Composite</i></li>
                      <li><i>Long Exposure</i></li>
                   </ul>
-                  <li>Media Design / Branding / Logo / Print Production</li>
-                  <li>Workbook & Relational Database Organization & Visualization</li>
                </ul>
             </div>
          </div>
