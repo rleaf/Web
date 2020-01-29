@@ -29,6 +29,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Amiri&display=swap');
 
+
 :root {
    --green: #6baf76;
    --lightGreen: #95e7a6;
@@ -40,10 +41,6 @@
 ::-webkit-scrollbar {
    width: 10px;
 }
-
-/* ::-webkit-scrollbar-track {
-   background: var(--white);
-} */
 
 ::-webkit-scrollbar-thumb {
    background: var(--green);
@@ -112,9 +109,9 @@ body, html {
 }
 
 .underline {
-   display: inline;
+   /* display: inline; */
    position: relative;
-   overflow: hidden;
+   /* overflow: hidden; */
 }
 
 .underline::after {

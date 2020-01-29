@@ -4,7 +4,7 @@
          <div class="imagehover">
             <p>expanse</p>
             <div id="subtext">
-               <p>font</p>
+               <p>typeface</p>
             </div>
             <div id="covertext">
                <p>10/9/2019</p>

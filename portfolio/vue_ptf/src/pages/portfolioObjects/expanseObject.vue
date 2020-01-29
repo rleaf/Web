@@ -5,7 +5,7 @@
          <div id="textContainerHeader">
             Expanse
             <div id="subHeader">
-               Font
+               typeface
             </div>         
          </div>
          <div id="textContainerBody">
@@ -22,7 +22,10 @@
          <img src="../../assets/expanse/lamborghini.jpg" alt="">
          <br>
          <div id="textContainerBody">
-
+            <div id="linkhover">
+               Sources: <a href="https://www.artstation.com/karlpoyzer"> Karl Poyzer</a> &
+               <a href="https://www.instagram.com/cosmic_background/">Andrew McCarthy</a>
+            </div>
          </div>        
       </div>
   </div>

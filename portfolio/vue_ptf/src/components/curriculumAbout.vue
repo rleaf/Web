@@ -2,8 +2,8 @@
   <div id="linkhover"> 
       Hello my name is Ryan Lin. This site is intended to provide a synopsis of what I enjoy doing and who I am.
       Amongst what is already mentioned below, I also enjoy
-      <a href='https://www.youtube.com/channel/UCe8X-Ib4hEc7keoBQ7cMdmA' target='_blank' style="color: var(--green);">power / olympic lifting</a>,
-      <a href='https://www.instagram.com/ryli.d/' target='_blank' style="color: var(--green);">eating / cooking</a>, and playing games.
+      <a href='https://www.youtube.com/channel/UCe8X-Ib4hEc7keoBQ7cMdmA' target='_blank'>power / olympic lifting</a>,
+      <a href='https://www.instagram.com/ryli.d/' target='_blank'>eating / cooking</a>, and playing games.
       Contrast to Behance, some works published here are more oriented towards providing step-by-step insight.
    </div>
 </template>
@@ -14,7 +14,11 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+
+#linkhover > a {
+   color: var(--green);
+}
 
 #linkhover > a:hover {
    color: var(--lightGreen) !important;

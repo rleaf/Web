@@ -7,7 +7,6 @@
          <router-link to="cv" class="underline">
             <li>About / Curriculum Vitae</li>
          </router-link>
-         <!-- <a href="#" class="underline"><li>Contact</li></a> -->
          <router-link to='contact' class="underline">
             <li>Contact</li>
          </router-link>
@@ -23,7 +22,6 @@
             <li>Instagram</li>
          </a>
          <li style="padding-left: 40px">Owl#4626</li>
-         <!-- Get rid of instagram? Not necessary?  -->
       </ul>
    </div>
 </template>
