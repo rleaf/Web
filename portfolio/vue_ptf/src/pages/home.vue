@@ -31,7 +31,8 @@
 
 
 :root {
-   --green: #6baf76;
+   /* --green: #6baf76; */
+   --green: #ebba82;
    --lightGreen: #95e7a6;
    --white: #fff;
    --black: #000000;
@@ -53,7 +54,8 @@
 body, html {
    margin: 0;
    padding: 0;
-   background-color: #161616;
+   /* background-color: #161616; */
+   background-color: #0e0e0e;
 }
 
 #landing {
