@@ -21,7 +21,7 @@
                   <u style="font-size: 18px;">Background & Skills</u>
                </div>
                <div  style="padding-bottom: 0;">
-               <i style="color: var(--green);">* Full CV available upon request</i>
+               <i style="color: var(--white);">* Full CV available upon request</i>
                </div>
 
                <ul style="list-style-type: square; margin-bottom: 100px;">

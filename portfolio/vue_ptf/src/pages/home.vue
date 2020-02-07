@@ -32,11 +32,11 @@
 
 :root {
    /* --green: #6baf76; */
-   --green: #ebba82;
-   --lightGreen: #95e7a6;
-   --white: #fff;
-   --black: #000000;
-   --offWhite: #cacaca;
+   --green: #ffffff;
+   --white: #cacaca;
+   --offWhite: #b1b1b1;
+   /* --lightGreen: #aa1d1d; */
+   /* --black: #000000; */
 }
 
 ::-webkit-scrollbar {

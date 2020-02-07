@@ -17,11 +17,11 @@ export default {
 <style>
 
 #linkhover > a {
-   color: var(--green);
+   color: var(--white);
 }
 
 #linkhover > a:hover {
-   color: var(--lightGreen) !important;
+   color: var(--green) !important;
 }
 
 </style> 
