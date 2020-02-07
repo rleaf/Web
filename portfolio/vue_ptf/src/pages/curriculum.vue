@@ -32,8 +32,8 @@
                   <ul style="list-style-type: none;">
                      <li><i>Adobe CC</i></li>
                      <li><i>MS Office</i></li>
-                     <li><i>HTML & CSS</i></li>
-                     <li><i>JavaScript</i></li>
+                     <li><i>HTML, CSS, JavaScript</i></li>
+                     <li><i>Python</i></li>
                   </ul>
                   <li>Photography</li>
                   <ul style="list-style-type: none;">
