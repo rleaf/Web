@@ -4,6 +4,7 @@
      <NavBar />
      <div id="portfolio">
         <PortfolioObjects />
+        <!-- <Grain/> -->
      </div>
   </div>
 
@@ -12,12 +13,14 @@
 <script>
    import NavBar from '../components/nav.vue'
    import PortfolioObjects from '../components/portfolioSkeleton.vue'
+   // import Grain from '../components/grain.vue'
 
    export default {
       name: 'home',
       components: {
          NavBar,
-         PortfolioObjects
+         PortfolioObjects,
+         // Grain,
       },
    }
 
