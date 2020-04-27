@@ -68,13 +68,21 @@ body, html {
 .nav {
    padding-top: 100px;
    font-size: 16px;
+   /* display: block; */
 }
 
 .nav:hover a {
    color: var(--green);
 }
 
+.nav img {
+   float: left;
+   padding-right: 50px;
+}
 
+#bar, #bar2 {
+   margin-top: 32px; /* 32 pixels to accordingly float to bottom w/  50px logo */
+}
 
 #bar {
    float: left;

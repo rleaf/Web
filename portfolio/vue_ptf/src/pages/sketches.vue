@@ -9,7 +9,7 @@
                   <i style="font-size: 18px;">---</i>
                </div>
                   <p>
-                     Sketches / Designs / Projects that are not complete. These were just for practice
+                     Sketches / Designs / Projects that are not complete. These are generally for practice
                      and learning new things. 
                   </p>
             </div>
