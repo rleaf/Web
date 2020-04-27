@@ -133,9 +133,9 @@ body, html {
    z-index: 1;
    right: 0;
    width: 0;
-   bottom: -20px;
+   bottom: -12px;
    background: var(--green);
-   height: 2px;
+   height: 1px;
    transition-property: left right;
    transition-duration: 0.3s;
    transition-timing-function: ease-out;
