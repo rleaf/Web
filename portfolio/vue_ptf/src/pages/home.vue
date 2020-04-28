@@ -77,7 +77,7 @@ body, html {
 
 .nav img {
    float: left;
-   padding-right: 50px;
+   padding-right: 40px;
 }
 
 #bar, #bar2 {

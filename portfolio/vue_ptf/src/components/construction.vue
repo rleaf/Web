@@ -1,6 +1,6 @@
 <template>
   <div id="landing">
-    <h1>This page is still being built <br><br> :)</h1>
+    <h1>This portion of the site is still being built <br><br> :)</h1>
     <h2>Updated {{date}}</h2>
   </div>
 </template>
@@ -12,7 +12,7 @@ export default {
     },
     data: function() {
       return {
-        date: '1/23/20'
+        date: '2/28/20'
       }
   }
 }

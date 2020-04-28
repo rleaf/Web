@@ -11,6 +11,8 @@ import barnegatLink from '../pages/portfolioObjects/barnegatObject.vue'
 import dropboxLink from '../pages/portfolioObjects/dropboxObject.vue'
 import valiantLink from '../pages/portfolioObjects/valiantObject.vue'
 import spotifyLink from '../pages/portfolioObjects/spotifyObject.vue'
+import spdmagazineLink from '../pages/portfolioObjects/spdmagazineObject.vue'
+import jawsLink from '../pages/portfolioObjects/jawsObject.vue'
 
 
 Vue.use(VueRouter)
@@ -71,6 +73,17 @@ const routes = [
     name: 'spotify',
     component: spotifyLink
   },
+  {
+    path: '/spdmagazine',
+    name: 'spdmagazine',
+    component: spdmagazineLink
+  },
+  {
+    path: '/jawsposter',
+    name: 'jawsposter',
+    component: jawsLink
+  }
+
   
             // {
             //   path: '/about',

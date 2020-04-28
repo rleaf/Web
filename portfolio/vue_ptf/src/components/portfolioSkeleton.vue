@@ -1,31 +1,38 @@
 <template>
    <div id="portfolioSkeletonFlex">
+      <jawsposter />
+      <spdmagazine />
       <valiant />
       <spotify />
       <expanse />
       <barnegatLight />
-      <tubeWorld />
+      <!-- <tubeWorld /> -->
       <dropbox />
    </div>
 </template>
 
 <script>
 import expanse from './portfolioPreview/expansePreview.vue'
-import tubeWorld from './portfolioPreview/tubePreview.vue'
+// import tubeWorld from './portfolioPreview/tubePreview.vue'
 import barnegatLight from './portfolioPreview/barnegatPreview.vue'
 import dropbox from './portfolioPreview/dropboxPreview.vue'
 import valiant from './portfolioPreview/valiantPreview.vue'
 import spotify from './portfolioPreview/spotifyPreview.vue'
+import spdmagazine from './portfolioPreview/spdmagazinePreview.vue'
+import jawsposter from './portfolioPreview/jawspreview.vue'
 
 
 export default {
    components: {
       expanse,
-      tubeWorld,
+      // tubeWorld,
       barnegatLight,
       dropbox,
       valiant,
-      spotify
+      spotify,
+      spdmagazine,
+      jawsposter
+
 
    },
 
