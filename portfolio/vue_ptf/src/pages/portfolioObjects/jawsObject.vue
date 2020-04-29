@@ -13,7 +13,12 @@ a<template>
             I want to present a "freehand" and "liberal" aesthetic in this poster illustration by creating unusual and organic shapes as opposed to
             standard geometric shapes such as squares.
          </div>
-         <img src="../../assets/jawsposter/jawsposter.png" alt="">
+         <img src="../../assets/jawsposter/mock1.jpg" alt="">
+         <br>
+         <img src="../../assets/jawsposter/mock21.jpg" alt="">
+         <!-- <img src="../../assets/jawsposter/mock2.png" alt=""> -->
+         <!-- <img src="../../assets/jawsposter/mock3.jpg" alt=""> -->
+         <!-- <img src="../../assets/jawsposter/jawsposter.png" alt=""> -->
          <div id="textContainerBody">
             Mockups of merchandise to pair with the redesign of the Jaws movie poster. To compensate for the sharp cutoffs on the right and bottom side of the shark
             I added more graphics that allowed the image to float nicely when placed in the middle of a shirt. The graphics also compliment the motion of the shark. 

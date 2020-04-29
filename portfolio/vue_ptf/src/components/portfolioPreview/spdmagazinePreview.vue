@@ -10,7 +10,7 @@
                <p>2/24/2020</p>
             </div>
          </div>
-         <img src="../../assets/spdmagazine/magazine_cover.png" class="portimg">
+         <img src="../../assets/spdmagazine/magazine_cover.jpg" class="portimg">
       </router-link>
    </div>
 </template>

@@ -312,7 +312,7 @@ body, html {
    padding: 25px 10vw;
    color: var(--offWhite);
    font-family: 'Lora', serif;
-   font-size: 16px;
+   font-size: 18px;
    /* font-weight: 300; */
    line-height: 140%;
 }

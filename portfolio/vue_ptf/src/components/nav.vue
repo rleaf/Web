@@ -23,10 +23,7 @@
             <a href="https://www.behance.net/ryli" class="underline" target="_blank">
                <li>Behance</li>
             </a>
-            <a href="https://www.instagram.com/ryi.food/" class="underline" target="_blank">
-               <li>Instagram</li>
-            </a>
-            <li style="padding-left: 40px">Owl#4626</li>
+            <!-- <li style="padding-left: 40px">Owl#4626</li> -->
          </ul>
       <!-- </div> -->
    </div>

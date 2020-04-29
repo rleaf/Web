@@ -10,7 +10,7 @@
                <p>11/12/2019</p>
             </div>
          </div>
-         <img src="../../assets/spotify/spotifyPreview.png" class="portimg">
+         <img src="../../assets/spotify/spotify_cover.jpg" class="portimg">
       </router-link>
    </div>
 </template>

@@ -10,7 +10,7 @@
                <p>12/8/2019</p>
             </div>
          </div>
-         <img src="../../assets/valiant/valiantPreview.png" class="portimg">
+         <img src="../../assets/valiant/valiant_cover.jpg" class="portimg">
       </router-link>
    </div>
 </template>

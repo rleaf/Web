@@ -17,6 +17,7 @@
          <div id="sketchesSkeletonFlex">
             <img src="../assets/sketches/eye.jpg" alt="" id="img350">
             <img src="../assets/sketches/gold.jpg" alt="" id="img350">
+            <!-- <img src="../assets/tube/tubeworld_glass.jpg" alt="" id="img350"> -->
          </div>
    </div>
 </template>

@@ -11,7 +11,7 @@
          <div id="textContainerBody">
             A redesign intended to convey a simple and cleaner aesthetic
          </div>
-         <img src="../../assets/dropbox/dropbox.jpg" alt="" id="img1300">
+         <img src="../../assets/dropbox/mock1.jpg" alt="" id="img1300">
          <!-- <video id="img1300" autoplay loop src="../../assets/dropbox/test.webm"></video> -->
          <video id="img1300" autoplay loop :src="landing"></video>
          <img src="../../assets/dropbox/dropbox_compare.jpg" alt="" id="img1300">

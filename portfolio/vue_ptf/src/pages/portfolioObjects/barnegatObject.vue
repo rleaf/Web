@@ -17,6 +17,8 @@
          <img src="../../assets/barnegat/seagullfront.jpg" alt="">
          <img src="../../assets/barnegat/seagullside.jpg" alt="">
          <img src="../../assets/barnegat/panorama.jpg" alt="" id="img1600">
+         <img src="../../assets/barnegat/mock1.jpg" alt="" id="img800">
+         <img src="../../assets/barnegat/mock2.jpg" alt="" id="img800">
          <div id="textContainerBody">
          </div>        
       </div>

@@ -16,6 +16,8 @@
          </div>
          <div id="textContainerBody">
          </div>
+         <img src="../../assets/spotify/mock1.jpg" alt="">
+         <img src="../../assets/spotify/mock2.jpg" alt="">
          <img src="../../assets/spotify/spotifymap.jpg" alt="" id="img1300">
          <br>
          <img src="../../assets/spotify/mainLanding.png" alt="" id="img350">
