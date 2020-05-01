@@ -16,20 +16,20 @@
          <img src="../../assets/spdmagazine/mock12.jpg" alt="" id="img1300">
          <img src="../../assets/spdmagazine/mock21.jpg" alt="" id="img1300">
          <img src="../../assets/spdmagazine/mock22.jpg" alt="" id="img1300">
-         <div id="textContainerBody">
-            
-         </div>
+         <toTop />
       </div>
   </div>
 </template>
 
 <script>
 import NavBar from '../../components/nav.vue'
+import toTop from '../../components/toTop.vue'
 
 export default {
    name: 'portfolioObject',
    components: {
-      NavBar
+      NavBar,
+      toTop
    }
 }
 </script>

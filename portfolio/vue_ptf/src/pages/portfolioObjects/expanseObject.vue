@@ -28,15 +28,18 @@
             </div>
          </div>        
       </div>
+      <toTop />
   </div>
 </template>
 
 <script>
 import NavBar from '../../components/nav.vue'
+import toTop from '../../components/toTop.vue'
 
 export default {
    components: {
-      NavBar
+      NavBar,
+      toTop
    }
 }
 </script>

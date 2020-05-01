@@ -3,6 +3,7 @@
   <div id="landing">
      <NavBar />
      <div id="portfolio">
+        <homeIntro />
         <PortfolioObjects />
         <!-- <Grain/> -->
      </div>
@@ -13,6 +14,7 @@
 <script>
    import NavBar from '../components/nav.vue'
    import PortfolioObjects from '../components/portfolioSkeleton.vue'
+   import homeIntro from '../components/homeIntro.vue'
    // import Grain from '../components/grain.vue'
 
    export default {
@@ -20,7 +22,8 @@
       components: {
          NavBar,
          PortfolioObjects,
-         // Grain,
+         homeIntro,
+         // Grain
       },
    }
 
@@ -59,6 +62,7 @@ body, html {
    padding: 0;
    /* background-color: #161616; */
    background-color: #0e0e0e;
+   /* scroll-behavior: smooth; */
 }
 
 #landing {
@@ -336,6 +340,8 @@ body, html {
    width: 500px;
    padding: 25px 5vw;
 } 
+
+
 
 </style>
 

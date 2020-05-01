@@ -16,20 +16,20 @@
          <video id="img1300" autoplay loop :src="landing"></video>
          <img src="../../assets/dropbox/dropbox_compare.jpg" alt="" id="img1300">
          <video id="img1300" autoplay loop :src="signin"></video>
-         <div id="textContainerBody">
-            
-         </div>        
+         <toTop />
       </div>
   </div>
 </template>
 
 <script>
 import NavBar from '../../components/nav.vue'
+import toTop from '../../components/toTop.vue'
 
 export default {
    name: 'portfolioObject',
    components: {
       NavBar,
+      toTop
    },
    data: function() {
       return {

@@ -27,16 +27,19 @@ a<template>
          <img src="../../assets/jawsposter/mockup1.jpg" class="portimg">
          <img src="../../assets/jawsposter/mockup2.jpg" class="portimg">
       </div>
+      <toTop />
   </div>
 </template>
 
 <script>
 import NavBar from '../../components/nav.vue'
+import toTop from '../../components/toTop.vue'
 
 export default {
    name: 'portfolioObject',
    components: {
-      NavBar
+      NavBar,
+      toTop
    }
 }
 </script>
