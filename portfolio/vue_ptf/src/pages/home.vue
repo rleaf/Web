@@ -7,7 +7,7 @@
         <PortfolioObjects />
         <!-- <Grain/> -->
          <div id="homefooter">
-            Designed and made from scratch
+            Designed and created from scratch
          </div>
      </div>
   </div>

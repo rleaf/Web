@@ -15,40 +15,19 @@
 <script>
 import { gsap } from "gsap";
 
-
 export default {
    
    mounted() {
-      // window.onload = function () {
-      
-         setTimeout(function() {
-            document.getElementsByClassName("introword").forEach(e => e.style.opacity = "1")  
-            }, 500);
       
          const x = document.getElementsByClassName("introword");
-         // console.log(x);
-         
-         function randomInt(max) {
-            return Math.floor(Math.random() * Math.floor(max) + 2);
-         }
       
          for (let i = 0; i < x.length; i++) {
-            // const y = Math.random();
-            gsap.to(x[i], {duration: randomInt(5), y: -50});
+            gsap.from(x[i], {duration: "random(3, 5)", y: 100});
+            gsap.from(x[i], {duration: 5, opacity: 0, stagger: 3.5});
          }
       
-         // gsap.to(".introword", {duration: 3, y: -50});
-      // }  
-   
    }
 }
-
-
-
-
-   
-
-
 </script>
 
 <style scoped>
@@ -58,23 +37,18 @@ export default {
    color: var(--white);
    font-size: 30px;
    padding-bottom: 0px;
-   /* width: 100vw; */
    height: 100px;
    text-align: center;
    bottom: 0;
    line-height: normal;
+   margin-bottom: 50px;
 }
 
 .introword {
-   /* text-align: center; */
-   padding: 0 3px;
    display: inline-block;
-   transition: opacity 4s ease-in-out;
-   opacity: 0;
-   /* transform: translate3d(0, 0, 0); */
-   /* transform: matrix(1 ,0 ,0 ,1 ,0 ,0); */
    white-space: nowrap;
    visibility: inherit;
+   padding: 0 3px;
 }
 
 </style>
