@@ -13,34 +13,40 @@
 </template>
 
 <script>
-export default {
+import { gsap } from "gsap";
 
+
+export default {
+   
+   mounted() {
+      // window.onload = function () {
+      
+         setTimeout(function() {
+            document.getElementsByClassName("introword").forEach(e => e.style.opacity = "1")  
+            }, 500);
+      
+         const x = document.getElementsByClassName("introword");
+         // console.log(x);
+         
+         function randomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max) + 2);
+         }
+      
+         for (let i = 0; i < x.length; i++) {
+            // const y = Math.random();
+            gsap.to(x[i], {duration: randomInt(5), y: -50});
+         }
+      
+         // gsap.to(".introword", {duration: 3, y: -50});
+      // }  
+   
+   }
 }
 
-// if (document.readyState === 'loading') {
-//    document.addEventListener('DOMContentLoaded', introlanding);
-// } else {
-//    introlanding();
-// }
 
-// window.onload = function () {
-//    document.getElementsByClassName('introword').forEach(e => e.style.visibility = "hidden");
-// }
 
-// function introlanding() {
-//    document.getElementById('introword').style.visiblity = "hidden";
-//    // x.style.visibility="hidden";
-//    // x
-// }
 
-// introlanding();
-// window.onload = introlanding();
-
-window.onload = function () {
-   setTimeout(function() {
-      document.getElementsByClassName("introword").forEach(e => e.style.opacity = "1")  
-      }, 500);
-   }
+   
 
 
 </script>
@@ -51,7 +57,7 @@ window.onload = function () {
 #landingintro {
    color: var(--white);
    font-size: 30px;
-   padding-bottom: 100px;
+   padding-bottom: 0px;
    /* width: 100vw; */
    height: 100px;
    text-align: center;
@@ -60,12 +66,15 @@ window.onload = function () {
 }
 
 .introword {
-   display: inline-block;
    /* text-align: center; */
-   transition: opacity 0.5s ease-in-out;
+   padding: 0 3px;
+   display: inline-block;
+   transition: opacity 4s ease-in-out;
    opacity: 0;
-   /* padding: 0 3px; */
-   transform: matrix(0, 0, 0, 0, 1, 1);
+   /* transform: translate3d(0, 0, 0); */
+   /* transform: matrix(1 ,0 ,0 ,1 ,0 ,0); */
+   white-space: nowrap;
+   visibility: inherit;
 }
 
 </style>

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/rleaf/html/issues"
   },
-  "homepage": "https://github.com/rleaf/html#readme"
+  "homepage": "https://github.com/rleaf/html#readme",
+  "dependencies": {
+    "gsap": "^3.2.6"
+  }
 }

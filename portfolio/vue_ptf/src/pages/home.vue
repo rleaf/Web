@@ -6,6 +6,9 @@
         <homeIntro />
         <PortfolioObjects />
         <!-- <Grain/> -->
+         <div id="homefooter">
+            Designed and made from scratch
+         </div>
      </div>
   </div>
 
@@ -341,7 +344,12 @@ body, html {
    padding: 25px 5vw;
 } 
 
-
+#homefooter {
+   font-family: 'Inconsolata', sans-serif;
+   color: var(--offWhite);
+   font-size: 16px;
+   padding: 100px 0 50px 0;
+}
 
 </style>
 
