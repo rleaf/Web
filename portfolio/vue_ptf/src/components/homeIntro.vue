@@ -23,7 +23,7 @@ export default {
       
          for (let i = 0; i < x.length; i++) {
             gsap.from(x[i], {duration: "random(3, 5)", y: 100});
-            gsap.from(x[i], {duration: 5, opacity: 0, stagger: 3.5});
+            gsap.from(x[i], {duration: "random(4, 8)", opacity: 0, stagger: 3.5, ease: "slow"});
          }
       
    }

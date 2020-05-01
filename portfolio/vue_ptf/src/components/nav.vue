@@ -61,7 +61,6 @@ export default {
          document.execCommand("copy");
          
       }
-
    }   
 }
 

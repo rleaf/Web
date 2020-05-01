@@ -160,7 +160,7 @@ body, html {
    flex-wrap: wrap;
    /* flex-direction: row; */
    clear:both;
-   padding: 200px 50px 0 50px;
+   padding: 120px 50px 0 50px;
    justify-content: center;
 }
 
