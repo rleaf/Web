@@ -7,7 +7,7 @@
         <PortfolioObjects />
         <!-- <Grain/> -->
          <div id="homefooter">
-            Designed and created from scratch
+            Designed and coded by Ryan Lin
          </div>
      </div>
   </div>

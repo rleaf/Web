@@ -3,9 +3,20 @@
    let scene = new THREE.Scene();
    let camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
    let renderer = new THREE.WebGLRenderer({antialias: false});
+
+   let container = document.getElementById('container');
+   let w = container.offsetWidth;
+   let h = container.offsetHeight;
+   renderer.setSize(w, h);
+   // container.appendChild(renderer.domElement);
+
+
    let ringGeometry = [];
    let circleRad = 1.5;
    let planets = new THREE.Group();
+
+
+
    const windowHalfX = window.innerWidth / 2;
    const windowHalfY = window.innerHeight / 2;
    const sunBase = new THREE.Object3D();
@@ -20,9 +31,14 @@
 
 
 
+   console.log(container);
 
    renderer.setSize(window.innerWidth, window.innerHeight);
-   document.body.appendChild(renderer.domElement);
+   container.appendChild(renderer.domElement);
+
+   // var controls = new THREE.OrbitControls(camera, renderer.domElement)
+
+   
 
    
    // geometry & control ring counts

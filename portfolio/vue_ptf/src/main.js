@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 import App from './App.vue'
 import router from './router'
+// import three from '../node_modules/three'
 
 Vue.use(VueRouter)
 

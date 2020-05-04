@@ -115,7 +115,7 @@ window.addEventListener('load', function() {
    width: 100vw;
 
    pointer-events: none;
-   opacity: .15;
+   opacity: .95;
 }
 
 </style>

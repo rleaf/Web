@@ -9,14 +9,23 @@
    <style>
       * {
          margin: 0;
-         overflow: hidden;
+         /* overflow: hidden; */
          background-color: #000;
          /* color: #161f9b */
       }
 
       canvas {
-         width: 100%;
-         height: 100%;
+         /* display: block; */
+         width: 100vw;
+         height: 100vh;
+         /* position: relative; */
+      }
+
+      .testies {
+         display: block;
+         width: 100vw;
+         height: 100vh;
+         background-color: #ffffff;
       }
 
       p {
@@ -24,9 +33,10 @@
          top: 50%;
          left: 50%;
          color: #ffffff;
-         z-index: -1;
+         z-index: 500;
          margin: 0;
          font-size: 200px;
+         background: transparent;
       }
    </style>
    <script src="js/three.js"></script>
@@ -35,7 +45,15 @@
 </head>
 
 <body>
-   <p>toads</p>
+   <!-- <p>toads</p> -->
+   <div id="container"></div>
+   <div class="testies"></div>
 </body>
+
+<script>
+
+   document.body.append
+
+</script>
 
 </html>
