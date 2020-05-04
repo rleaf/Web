@@ -1,16 +1,16 @@
 <template>
    <div id="imgcontainer">
-      <router-link id="imgrouter" to="/jawsposter">
+      <router-link id="imgrouter" to="/sign">
          <div class="imagehover">
-            <p>Jaws Movie Poster</p>
+            <p>ASL Illustrations</p>
             <div id="subtext">
                <p>Illustration</p>
             </div>
             <div id="covertext">
-               <p>5/13/2020</p>
+               <p>4/2/2020</p>
             </div>
          </div>
-         <img src="../../assets/jawsposter/mock_cover.jpg" class="portimg">
+         <img src="../../assets/signlanguage/sign_cover.jpg" class="portimg">
       </router-link>
    </div>
 </template>
@@ -19,6 +19,7 @@
 export default {
 
 }
+
 </script>
 
 <style>

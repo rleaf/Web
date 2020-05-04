@@ -13,6 +13,7 @@ import valiantLink from '../pages/portfolioObjects/valiantObject.vue'
 import spotifyLink from '../pages/portfolioObjects/spotifyObject.vue'
 import spdmagazineLink from '../pages/portfolioObjects/spdmagazineObject.vue'
 import jawsLink from '../pages/portfolioObjects/jawsObject.vue'
+import signLink from '../pages/portfolioObjects/signObject.vue'
 
 
 Vue.use(VueRouter)
@@ -82,6 +83,11 @@ const routes = [
     path: '/jawsposter',
     name: 'jawsposter',
     component: jawsLink
+  },
+  {
+    path: '/sign',
+    name: 'sign',
+    component: signLink
   }
 
   

@@ -301,6 +301,15 @@ body, html {
 
 }
 
+#imgH400 {
+   height: 400px !important;
+   user-select: none;
+   -moz-user-select: none;
+   -webkit-user-drag: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+}
+
 #textContainerHeader {
    font-size: 40px;
    font-family: 'Inconsolata';

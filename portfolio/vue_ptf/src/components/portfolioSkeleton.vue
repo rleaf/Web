@@ -1,6 +1,7 @@
 <template>
    <div id="portfolioSkeletonFlex">
       <jawsposter />
+      <signLanguage />
       <spdmagazine />
       <valiant />
       <spotify />
@@ -18,6 +19,7 @@ import barnegatLight from './portfolioPreview/barnegatPreview.vue'
 import dropbox from './portfolioPreview/dropboxPreview.vue'
 import valiant from './portfolioPreview/valiantPreview.vue'
 import spotify from './portfolioPreview/spotifyPreview.vue'
+import signLanguage from './portfolioPreview/signPreview.vue'
 import spdmagazine from './portfolioPreview/spdmagazinePreview.vue'
 import jawsposter from './portfolioPreview/jawspreview.vue'
 
@@ -30,6 +32,7 @@ export default {
       dropbox,
       valiant,
       spotify,
+      signLanguage,
       spdmagazine,
       jawsposter
 
