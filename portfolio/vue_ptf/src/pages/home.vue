@@ -4,10 +4,10 @@
      <NavBar />
      <div id="portfolio">
         <homeIntro />
-        <PortfolioObjects />
+        <portfolioSkeleton />
         <!-- <Grain/> -->
          <div id="homefooter">
-            Designed and coded by Ryan Lin
+            Made by Ryan Lin
          </div>
      </div>
   </div>
@@ -16,7 +16,7 @@
 
 <script>
    import NavBar from '../components/nav.vue'
-   import PortfolioObjects from '../components/portfolioSkeleton.vue'
+   import portfolioSkeleton from '../components/portfolioSkeleton.vue'
    import homeIntro from '../components/homeIntro.vue'
    // import Grain from '../components/grain.vue'
 
@@ -24,7 +24,7 @@
       name: 'home',
       components: {
          NavBar,
-         PortfolioObjects,
+         portfolioSkeleton,
          homeIntro,
          // Grain
       },

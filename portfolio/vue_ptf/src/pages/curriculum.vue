@@ -37,7 +37,6 @@
                   </ul>
                   <li>Photography</li>
                   <ul style="list-style-type: none;">
-                     <li><i>Astrophotography</i></li>
                      <li><i>Composite</i></li>
                      <li><i>Long Exposure</i></li>
                   </ul>

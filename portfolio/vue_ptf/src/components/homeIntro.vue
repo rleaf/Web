@@ -2,13 +2,14 @@
    <div id="landingintro">
       <span class="introword">Hi </span>
       <span class="introword">I'm </span>
-      <span class="introword">Ryan. </span>
+      <span class="introword">Ryan.</span>
       <span class="introword">I </span>
       <span class="introword">like </span>
       <span class="introword">to </span>
-      <span class="introword">design </span>
+      <span class="introword">design, </span>
+      <span class="introword">code, </span>
       <span class="introword">and </span>
-      <span class="introword">code. </span>
+      <span class="introword">learn. </span>
    </div>
 </template>
 

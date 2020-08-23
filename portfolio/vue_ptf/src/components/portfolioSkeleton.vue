@@ -1,6 +1,6 @@
 <template>
    <div id="portfolioSkeletonFlex">
-      <jawsposter />
+      <!-- <jawsposter /> -->
       <signLanguage />
       <spdmagazine />
       <valiant />
@@ -21,7 +21,7 @@ import valiant from './portfolioPreview/valiantPreview.vue'
 import spotify from './portfolioPreview/spotifyPreview.vue'
 import signLanguage from './portfolioPreview/signPreview.vue'
 import spdmagazine from './portfolioPreview/spdmagazinePreview.vue'
-import jawsposter from './portfolioPreview/jawspreview.vue'
+// import jawsposter from './portfolioPreview/jawspreview.vue'
 
 
 export default {
@@ -33,8 +33,8 @@ export default {
       valiant,
       spotify,
       signLanguage,
-      spdmagazine,
-      jawsposter
+      spdmagazine
+      // jawsposter
 
 
    },
