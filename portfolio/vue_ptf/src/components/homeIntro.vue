@@ -6,10 +6,19 @@
       <span class="introword">I </span>
       <span class="introword">like </span>
       <span class="introword">to </span>
-      <span class="introword">design, </span>
-      <span class="introword">code, </span>
-      <span class="introword">and </span>
-      <span class="introword">learn. </span>
+      <span class="introword">solve </span>
+      <span class="introword">problems. </span>
+         <!-- <span class="introword" style="padding: 0 0 0 3px;">p</span>
+         <span class="introword" style="padding: 0;">r</span>
+         <span class="introword" style="padding: 0;">o</span>
+         <span class="introword" style="padding: 0;">b</span>
+         <span class="introword" style="padding: 0;">l</span>
+         <span class="introword" style="padding: 0;">e</span>
+         <span class="introword" style="padding: 0;">m</span>  
+         <span class="introword" style="padding: 0;">s</span>
+         <span class="introword" style="padding: 0;">.</span> -->
+      <!-- <span class="introword">and </span>
+      <span class="introword">learn. </span> -->
    </div>
 </template>
 
@@ -24,7 +33,7 @@ export default {
       
          for (let i = 0; i < x.length; i++) {
             gsap.from(x[i], {duration: "random(3, 5)", y: 100});
-            gsap.from(x[i], {duration: "random(4, 8)", opacity: 0, stagger: 3.5, ease: "slow"});
+            gsap.from(x[i], {duration: "random(4, 8)", opacity: 0, stagger: 6, ease: "slow"});
          }
       
    }

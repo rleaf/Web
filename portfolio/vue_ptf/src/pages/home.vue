@@ -1,17 +1,21 @@
 <template>
+<div id="origin">
+   <div id="canvas">
+      <waduuuu />
+   </div>
 
   <div id="landing">
-     <NavBar />
-     <div id="portfolio">
-        <homeIntro />
-        <portfolioSkeleton />
-        <!-- <Grain/> -->
+      <NavBar />
+      <div id="portfolio">
+         <homeIntro />
+         <portfolioSkeleton />
+         <!-- <Grain/> -->
          <div id="homefooter">
             Made by Ryan Lin
          </div>
-     </div>
+      </div>
   </div>
-
+</div>
 </template>
 
 <script>
@@ -19,6 +23,7 @@
    import portfolioSkeleton from '../components/portfolioSkeleton.vue'
    import homeIntro from '../components/homeIntro.vue'
    // import Grain from '../components/grain.vue'
+   import waduuuu from '../components/waduuuu.vue'
 
    export default {
       name: 'home',
@@ -26,6 +31,7 @@
          NavBar,
          portfolioSkeleton,
          homeIntro,
+         waduuuu
          // Grain
       },
    }
@@ -49,7 +55,9 @@
 }
 
 ::-webkit-scrollbar {
-   width: 10px;
+   display: none;
+   /* width: 10px; */
+   /* overflow: hidden; */
 }
 
 ::-webkit-scrollbar-thumb {
@@ -60,12 +68,22 @@
    background: var(--green);
 }
 
+::-webkit-scrollbar-track {
+   display: none;
+}
+
 body, html {
    margin: 0;
    padding: 0;
-   /* background-color: #161616; */
-   background-color: #0e0e0e;
+   background-color: #161616;
+   /* background-color: #0e0e0e; */
    /* scroll-behavior: smooth; */
+   /* overflow: hidden; */
+}
+
+#origin {
+   width: 100vw;
+   height: 100vh;
 }
 
 #landing {
@@ -358,6 +376,7 @@ body, html {
    color: var(--offWhite);
    font-size: 16px;
    padding: 100px 0 50px 0;
+   z-index: 1;
 }
 
 </style>

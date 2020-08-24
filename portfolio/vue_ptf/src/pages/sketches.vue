@@ -19,6 +19,8 @@
             <img src="../assets/sketches/gold.jpg" alt="" id="imgH400">
             <img src="../assets/sketches/tube.jpg" alt="" id="imgH400">
             <video autoplay loop :src="threejs" alt=""></video>
+            <img src="../assets/sketches/shark1.jpg" alt="" id="imgH400">
+            <img src="../assets/sketches/shark2.jpg" alt="" id="imgH400">
             <!-- <img src="../assets/tube/tubeworld_glass.jpg" alt="" id="img350"> -->
          </div>
          <toTop />
