@@ -13,7 +13,7 @@
                <li>Design</li>
             </router-link>
             <router-link to="cv" class="underline">
-               <li>About / Curriculum Vitae</li>
+               <li>About / CV</li>
             </router-link>
             <router-link to='' class="underline">
                <span @click="emailnotif">

@@ -1,9 +1,9 @@
 <template>
-<keep-alive>
-   <div id="planets">
-      
-   </div>
-</keep-alive>
+   <keep-alive>
+      <div id="planets">
+         
+      </div>
+   </keep-alive>
 </template>
 
 <script>

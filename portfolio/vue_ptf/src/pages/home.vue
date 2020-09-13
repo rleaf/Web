@@ -368,6 +368,7 @@ body, html {
    line-height: 140%;
    width: 500px;
    padding: 25px 5vw;
+   /* float: left; */
 } 
 
 #homefooter {
