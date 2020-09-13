@@ -4,6 +4,7 @@ import HomePage from '../pages/home.vue'
 import CurriculumVitae from '../pages/curriculum.vue'
 import contact from '../pages/contact.vue'
 import sketches from '../pages/sketches.vue'
+import designLink from '../pages/design.vue'
 import portfolioLink from '../pages/portfolioObjects/portfolioObject.vue'
 import expanseLink from '../pages/portfolioObjects/expanseObject.vue'
 import tubeLink from '../pages/portfolioObjects/tubeObject.vue'
@@ -14,6 +15,7 @@ import spotifyLink from '../pages/portfolioObjects/spotifyObject.vue'
 import spdmagazineLink from '../pages/portfolioObjects/spdmagazineObject.vue'
 import jawsLink from '../pages/portfolioObjects/jawsObject.vue'
 import signLink from '../pages/portfolioObjects/signObject.vue'
+
 
 
 Vue.use(VueRouter)
@@ -88,6 +90,11 @@ const routes = [
     path: '/sign',
     name: 'sign',
     component: signLink
+  },
+  {
+    path: '/design',
+    name: 'design',
+    component: designLink
   }
 
   

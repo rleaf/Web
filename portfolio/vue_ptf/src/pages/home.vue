@@ -3,16 +3,15 @@
    <div id="canvas">
       <waduuuu />
    </div>
-
   <div id="landing">
       <NavBar />
       <div id="portfolio">
          <homeIntro />
-         <portfolioSkeleton />
+         <!-- <portfolioSkeleton /> -->
          <!-- <Grain/> -->
-         <div id="homefooter">
-            Made by Ryan Lin
-         </div>
+      </div>
+      <div id="homefooter">
+         <a href="https://youtu.be/wupToqz1e2g" target="_blank">Made by Ryan Lin</a>
       </div>
   </div>
 </div>
@@ -20,7 +19,7 @@
 
 <script>
    import NavBar from '../components/nav.vue'
-   import portfolioSkeleton from '../components/portfolioSkeleton.vue'
+   // import portfolioSkeleton from '../components/portfolioSkeleton.vue'
    import homeIntro from '../components/homeIntro.vue'
    // import Grain from '../components/grain.vue'
    import waduuuu from '../components/waduuuu.vue'
@@ -29,7 +28,7 @@
       name: 'home',
       components: {
          NavBar,
-         portfolioSkeleton,
+         // portfolioSkeleton,
          homeIntro,
          waduuuu
          // Grain
@@ -75,7 +74,7 @@
 body, html {
    margin: 0;
    padding: 0;
-   background-color: #161616;
+   background-color: #0e0e0e;
    /* background-color: #0e0e0e; */
    /* scroll-behavior: smooth; */
    /* overflow: hidden; */
@@ -372,11 +371,25 @@ body, html {
 } 
 
 #homefooter {
+   position: absolute;
    font-family: 'Inconsolata', sans-serif;
    color: var(--offWhite);
    font-size: 16px;
-   padding: 100px 0 50px 0;
-   z-index: 1;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+   text-align: center;
+   bottom: 5vh;
+}
+
+#homefooter, a {
+   text-decoration: none;
+   color: var(--offWhite);
+}
+
+#homefooter, a:hover {
+   color: var(--white);
 }
 
 </style>

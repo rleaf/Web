@@ -9,6 +9,9 @@
             <!-- <router-link to="/" class="underline">
                <li>Home</li>
             </router-link> -->
+            <router-link to="design" class="underline">
+               <li>Design</li>
+            </router-link>
             <router-link to="cv" class="underline">
                <li>About / Curriculum Vitae</li>
             </router-link>

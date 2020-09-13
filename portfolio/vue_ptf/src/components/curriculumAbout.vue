@@ -4,8 +4,7 @@
       Amongst what is already mentioned below, I also enjoy
       <a href='https://www.youtube.com/channel/UCe8X-Ib4hEc7keoBQ7cMdmA' target='_blank'>power / olympic lifting</a>,
       <a href='https://www.instagram.com/rylikefood/' target='_blank'>eating / cooking</a>, and playing games. 
-      Extraneous to design, I spend a lot of my extra time learning more about code and machine learning applications;
-      with a focus in Deep Learning. Some works published here are more oriented towards providing step-by-step insight to 
+      Extraneous to design, I spend a lot of my extra time learning more about code and machine learning applications. Some works published here are more oriented towards providing step-by-step insight to 
       show my design process.
    </div>
 </template>

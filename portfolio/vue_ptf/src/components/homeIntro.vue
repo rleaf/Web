@@ -32,7 +32,7 @@ export default {
          const x = document.getElementsByClassName("introword");
       
          for (let i = 0; i < x.length; i++) {
-            gsap.from(x[i], {duration: "random(3, 5)", y: 100});
+            gsap.from(x[i], {duration: "random(3, 5)", y: 120});
             gsap.from(x[i], {duration: "random(4, 8)", opacity: 0, stagger: 6, ease: "slow"});
          }
       
@@ -45,20 +45,19 @@ export default {
 
 #landingintro {
    color: var(--white);
-   font-size: 30px;
+   font-size: 46px;
    padding-bottom: 0px;
    height: 100px;
    text-align: center;
-   bottom: 0;
    line-height: normal;
-   margin-bottom: 50px;
+   margin-top: 18vh;
 }
 
 .introword {
    display: inline-block;
    white-space: nowrap;
    visibility: inherit;
-   padding: 0 3px;
+   padding: 0 4px;
 }
 
 </style>
