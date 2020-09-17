@@ -53,6 +53,12 @@ export default {
    margin-top: 18vh;
 }
 
+@media screen and (max-height: 850px) {
+   #landingintro {
+      margin-top: 10vh;
+   }
+}
+
 .introword {
    display: inline-block;
    white-space: nowrap;
