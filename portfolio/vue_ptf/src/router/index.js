@@ -95,6 +95,10 @@ const routes = [
     path: '/design',
     name: 'design',
     component: designLink
+  },
+  {
+    path: '/*',
+    component: 404
   }
 
   
