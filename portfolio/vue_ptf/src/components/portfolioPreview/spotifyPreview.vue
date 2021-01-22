@@ -7,7 +7,7 @@
                <p>UI / UX</p>
             </div>
             <div id="covertext">
-               <p>11/12/2019</p>
+               <!-- <p>11/12/2019</p> -->
             </div>
          </div>
          <img src="../../assets/spotify/spotify_cover.jpg" class="portimg">

@@ -7,7 +7,7 @@
                <p>Illustration</p>
             </div>
             <div id="covertext">
-               <p>4/2/2020</p>
+               <!-- <p>4/2/2020</p> -->
             </div>
          </div>
          <img src="../../assets/signlanguage/sign_cover.jpg" class="portimg">

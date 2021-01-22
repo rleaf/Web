@@ -7,7 +7,7 @@
                <p>Illustration / Print / Layout</p>
             </div>
             <div id="covertext">
-               <p>2/24/2020</p>
+               <!-- <p>2/24/2020</p> -->
             </div>
          </div>
          <img src="../../assets/spdmagazine/magazine_cover.jpg" class="portimg">

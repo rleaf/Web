@@ -7,7 +7,7 @@
                <p>photo manipulation</p>
             </div>
             <div id="covertext">
-               <p>2/15/19</p>
+               <!-- <p>2/15/19</p> -->
             </div>
          </div>
          <img src="../../assets/tube/tubeworld_cover.jpg" class="portimg">

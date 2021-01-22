@@ -7,7 +7,7 @@
                <p>Branding / Logo & Web Design / Dev</p>
             </div>
             <div id="covertext">
-               <p>12/8/2019</p>
+               <!-- <p>12/8/2019</p> -->
             </div>
          </div>
          <img src="../../assets/valiant/valiant_cover.jpg" class="portimg">

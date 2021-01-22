@@ -7,7 +7,7 @@
                <p>fox</p>
             </div>
             <div id="covertext">
-               <p>01/04/20</p>
+               <!-- <p>01/04/20</p> -->
             </div>
          </div>
          <img src="../../assets/test.jpg" class="portimg">

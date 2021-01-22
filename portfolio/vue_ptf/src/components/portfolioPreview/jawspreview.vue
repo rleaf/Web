@@ -7,7 +7,7 @@
                <p>Illustration</p>
             </div>
             <div id="covertext">
-               <p>5/13/2020</p>
+               <!-- <p>5/13/2020</p> -->
             </div>
          </div>
          <img src="../../assets/jawsposter/mock_cover.jpg" class="portimg">
